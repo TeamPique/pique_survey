@@ -16,5 +16,9 @@ var NavView = Backbone.View.extend({
 	renderSurvey: function(e) {
 		e.preventDefault();
 		home.survey();
+	},
+	renderRegister: function(e) {
+		e.preventDefault();
+		home.register();
 	}
 });

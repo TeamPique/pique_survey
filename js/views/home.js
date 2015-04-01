@@ -6,6 +6,7 @@ var Home = Backbone.View.extend({
 		this.register();
 	},
 	survey: function() {
+		var appBody = new AppBody();
 		this.$el.html(this.surveyHeaderTemplate());
 		return this;
 	},
@@ -13,4 +14,5 @@ var Home = Backbone.View.extend({
 		this.$el.html(this.registerTemplate());
 		return this;
 	},
+
 });

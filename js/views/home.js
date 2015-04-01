@@ -11,6 +11,7 @@ var Home = Backbone.View.extend({
 		return this;
 	},
 	register: function() {
+		$('#view').empty();
 		this.$el.html(this.registerTemplate());
 		return this;
 	},

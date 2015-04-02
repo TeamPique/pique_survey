@@ -2,7 +2,7 @@ var NavView = Backbone.View.extend({
 	el: '#nav',
 	navTemplate: _.template($('#nav-template').html()),
 	initialize: function() {
-		home = new Home();
+		var landing = new Landing();
 		this.render();
 	},
 	events: {

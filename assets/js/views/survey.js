@@ -1,4 +1,4 @@
-var AppBody = Backbone.View.extend({
+var Survey = Backbone.View.extend({
 	el: '#view',
 	surveyTemplate: _.template($('#survey-body-template').html()),
 	initialize: function() {

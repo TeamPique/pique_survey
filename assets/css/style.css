@@ -2,6 +2,10 @@ body {
   background-image: url(../img/bg.jpg);
 }
 
+input {
+  background: transparent;
+}
+
 #home {
 	height: 100vh;
 }

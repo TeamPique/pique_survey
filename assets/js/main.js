@@ -1,4 +1,4 @@
-new NavView();
+var landing = new Landing();
 
 new WOW(
     { offset: 120 }

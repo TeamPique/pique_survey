@@ -9,6 +9,11 @@ input {
 
 button#register-btn {
   border-radius: 1px;
+  font-size: 12px;
+}
+
+#header {
+  padding-top: 90px;
 }
 
 .form-control {

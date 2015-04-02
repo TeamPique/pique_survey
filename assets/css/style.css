@@ -1,7 +1,14 @@
 body {
   background-image: url(../img/bg.jpg);
   color: #fff;
-  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded',Arial,sans-serif; 
+}
+
+h1 {
+  color: #fff;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 100;
 }
 
 input#name, input#email {

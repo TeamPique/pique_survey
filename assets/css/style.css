@@ -1,10 +1,13 @@
 body {
   background-image: url(../img/bg.jpg);
   color: #fff;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded',Arial,sans-serif; 
 }
 
-input {
+input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
+  border-radius: 1px;
+  border: 1px solid #77858B;
 }
 
 button#register-btn {

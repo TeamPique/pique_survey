@@ -17,7 +17,7 @@ input#name, input#email {
   border: 1px solid #77858B;
 }
 
-button#register-btn {
+button#register-btn, button#learn-btn {
   border-radius: 1px;
   font-size: 12px;
 }

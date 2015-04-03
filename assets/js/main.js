@@ -8,4 +8,6 @@ new WOW(
 
 $(function() {
 	moment().format();
+
+	 $('#clock').livestamp(new Date('April 22, 2015'));
 });

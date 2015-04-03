@@ -41,9 +41,15 @@ input#name, input#email {
   border: 1px solid #77858B;
 }
 
+.form-control::-webkit-input-placeholder {
+  color: #F2F3F5;
+  font-size: 12px;
+}
+
 button#register-btn, button#learn-btn {
   border-radius: 1px;
   font-size: 12px;
+  background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
 }
 
 button#learn-btn {

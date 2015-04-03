@@ -1,14 +1,15 @@
 body {
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: url(../img/bg2.jpg) no-repeat center center fixed;
   color: #fff;
   background-size: cover;
 }
 
-h1 {
+h1, h3 {
   color: #fff;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
   color: #FCFCFC;
+  font-weight: 300;
 }
 
 h4 {
@@ -20,30 +21,37 @@ h4 {
 
 p {
   font-size: 10px;
-  padding-bottom: 25px;
+  
 }
 
  p.title{
   overflow: hidden;
   text-align: center;
+  color: #a3a3a3;
 }
 
 li p {
   font-size: 11px;
-  margin-top: -30px;
+  
 }
 
 p.title, #hours, #minutes, #seconds{
   font-size: 14px;
 }
+#countdown-col, #register-form {
+  background: #fff;
+}
+
+#header-col {
+  background: #5eb0e7;
+}
 
 ul#counter {
-  margin-top: -40px;
   padding-left: 0px;
 }
 ul#counter li {
   display: inline-block;
-  padding: 20px;
+  background: #5eb0e7;
 }
 
 input#name, input#email {
@@ -65,8 +73,8 @@ button#register-btn, button#learn-btn {
 }
 
 button#register-btn:active, button#learn-btn:active {
-    vertical-align: top;
-    padding: 8px 13px 6px;
+  vertical-align: top;
+  padding: 8px 13px 6px;
 }
 
 button#learn-btn {
@@ -74,14 +82,6 @@ button#learn-btn {
   width: 100px;
 }
 
-#header {
-  margin-top: 85px;
-}
-
-#countdown {
-  padding-top: 50px;
-  min-height: 245px;
-}
 
 .form-control {
   height: 50px;
@@ -97,7 +97,7 @@ button#learn-btn {
 }
 
 #sign-up {
-  margin-top: -20px;
+  
   padding-left: 0;
 }
 
@@ -107,43 +107,3 @@ button#learn-btn {
   }
 }
 
-p.title.launching-in:before,
-p.title.launching-in:after {
-    background-color: #647278;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 27%;
-}
-p.title:before {
-    right: 1.5em;
-    margin-left: -50%;
-}
-p.title:after {
-    left: 1.5em;
-    margin-right: -50%;
-}
-
-p.title.sign-up:before,
-p.title.sign-up:after {
-    background-color: #647278;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 26%;
-}
-
-p.title.footer:before,
-p.title.footer:after {
-    background-color: #647278;
-    content: "";
-    display: inline-block;
-    height: 1px;
-    position: relative;
-    vertical-align: middle;
-    width: 14%;
-}

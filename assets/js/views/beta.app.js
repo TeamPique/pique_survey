@@ -8,7 +8,8 @@ beta.App = Backbone.View.extend({
 		this.countdown('04/22/2015 12:0 AM', 'countdown');
 	},
 	events: {
-		'click #register-btn' : 'create'
+		'click #register-btn': 'create',
+   'keypress .form_horizontal' : 'create'
 	},
 	form: function() {
 		$('#register-form').html(this.registerTpl());

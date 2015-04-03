@@ -34,11 +34,11 @@ button#learn-btn {
 }
 
 #header {
-  padding-top: 90px;
+  margin-top: 90px;
 }
 
 #countdown {
-  padding-top: 50px;
+  padding-top: 75px;
   min-height: 245px;
 }
 
@@ -56,4 +56,11 @@ button#learn-btn {
   position: relative;
   display: block;
   z-index: 5;
+}
+ul#counter {
+  margin-top: -45px;
+}
+ul#counter li {
+  display: inline-block;
+  padding: 20px;
 }

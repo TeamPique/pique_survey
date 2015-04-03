@@ -23,13 +23,18 @@ p {
   padding-bottom: 25px;
 }
 
-p.title {
-  font-size: 10px;
+ p.title{
+  overflow: hidden;
+  text-align: center;
 }
 
 li p {
   font-size: 11px;
   margin-top: -30px;
+}
+
+p.title, #hours, #minutes, #seconds{
+  font-size: 14px;
 }
 
 ul#counter {
@@ -45,6 +50,7 @@ input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
   border-radius: 1.5px;
   border: 1px solid #77858B;
+  color: #F2F3F5;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -96,11 +102,6 @@ button#learn-btn {
   }
 }
 
-p.title {
-    overflow: hidden;
-    text-align: center;
-    
-}
 p.title.launching-in:before,
 p.title.launching-in:after {
     background-color: #647278;

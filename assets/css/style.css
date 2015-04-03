@@ -30,6 +30,11 @@ p {
   color: #a3a3a3;
 }
 
+li {
+  height: 70px;
+  width: 70px;
+}
+
 li p {
   font-size: 11px;
   

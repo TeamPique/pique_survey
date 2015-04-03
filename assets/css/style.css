@@ -1,6 +1,7 @@
 body {
-  background-image: url(../img/bg.jpg);
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   color: #fff;
+  background-size: cover;
 }
 
 h1 {
@@ -32,7 +33,7 @@ li p {
 }
 
 ul#counter {
-  margin-top: -45px;
+  margin-top: -40px;
   padding-left: 0px;
 }
 ul#counter li {
@@ -58,16 +59,16 @@ button#register-btn, button#learn-btn {
 }
 
 button#learn-btn {
-  height: 35px;
+  height: 30px;
   width: 100px;
 }
 
 #header {
-  margin-top: 90px;
+  margin-top: 85px;
 }
 
 #countdown {
-  padding-top: 75px;
+  padding-top: 50px;
   min-height: 245px;
 }
 
@@ -76,19 +77,16 @@ button#learn-btn {
 }
 
 #footer {
-	margin-top: 100px;
-  padding: 50px 0;
+	margin-top: 50px;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.4px;
   text-align: center;
-  position: relative;
   display: block;
-  z-index: 5;
 }
 
 #sign-up {
-  margin-top: -30px;
+  margin-top: -20px;
   padding-left: 0;
 }
 
@@ -131,4 +129,15 @@ p.title.sign-up:after {
     position: relative;
     vertical-align: middle;
     width: 26%;
+}
+
+p.title.footer:before,
+p.title.footer:after {
+    background-color: #647278;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 14%;
 }

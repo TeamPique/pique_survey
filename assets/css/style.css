@@ -37,7 +37,7 @@ ul#counter li {
 
 input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
-  border-radius: 1px;
+  border-radius: 1.5px;
   border: 1px solid #77858B;
 }
 
@@ -85,4 +85,39 @@ button#learn-btn {
   #sign-up {
     padding-left: 15px;
   }
+}
+
+p.title {
+    overflow: hidden;
+    text-align: center;
+    
+}
+p.title.launching-in:before,
+p.title.launching-in:after {
+    background-color: #647278;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 27%;
+}
+p.title:before {
+    right: 1.5em;
+    margin-left: -50%;
+}
+p.title:after {
+    left: 1.5em;
+    margin-right: -50%;
+}
+
+p.title.sign-up:before,
+p.title.sign-up:after {
+    background-color: #647278;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 26%;
 }

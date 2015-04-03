@@ -17,6 +17,24 @@ p {
   padding-bottom: 25px;
 }
 
+p.title {
+  font-size: 10px;
+}
+
+li p {
+  font-size: 11px;
+  margin-top: -30px;
+}
+
+ul#counter {
+  margin-top: -45px;
+  padding-left: 0px;
+}
+ul#counter li {
+  display: inline-block;
+  padding: 20px;
+}
+
 input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
   border-radius: 1px;
@@ -57,19 +75,14 @@ button#learn-btn {
   display: block;
   z-index: 5;
 }
-ul#counter {
-  margin-top: -45px;
-}
-ul#counter li {
-  display: inline-block;
-  padding: 20px;
-}
-
-li p {
-  font-size: 11px;
-  margin-top: -30px;
-}
 
 #sign-up {
   margin-top: -30px;
+  padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  #sign-up {
+    padding-left: 15px;
+  }
 }

@@ -64,6 +64,11 @@ button#register-btn, button#learn-btn {
   background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
 }
 
+button#register-btn:active {
+    vertical-align: top;
+    padding: 8px 13px 6px;
+}
+
 button#learn-btn {
   height: 30px;
   width: 100px;

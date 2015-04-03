@@ -9,7 +9,7 @@ beta.App = Backbone.View.extend({
 	},
 	events: {
 		'click #register-btn': 'create',
-   'keypress .form_horizontal' : 'create'
+    'keypress .form_horizontal': 'create'
 	},
 	form: function() {
 		$('#register-form').html(this.registerTpl());

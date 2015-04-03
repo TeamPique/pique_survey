@@ -38,7 +38,7 @@ li p {
 p.title, #hours, #minutes, #seconds{
   font-size: 14px;
 }
-#countdown-col, #register-form {
+#countdown-col, #register-form, #footer {
   background: #fff;
 }
 

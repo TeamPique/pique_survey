@@ -1,6 +1,6 @@
 var beta = beta || {};
 
-beta.Users = Backbone.Collection.extend({
+beta.Users = Backbone.Firebase.Collection.extend({
 	model: beta.User,
-	// url: 'https://pique.firebaseio.com/users/',
+	url: 'https://pique-beta-test.firebaseio.com/users',
 });

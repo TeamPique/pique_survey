@@ -1,6 +1,7 @@
 var beta = beta || {};
+var collection = new beta.Users();
 
-new beta.App();
+new beta.App({collection: collection});
 
 new WOW(
     { offset: 120 }
@@ -11,3 +12,5 @@ $(function() {
 
 	 $('#clock').livestamp(new Date('April 22, 2015'));
 });
+
+

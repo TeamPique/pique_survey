@@ -39,10 +39,10 @@ beta.App = Backbone.View.extend({
       var hours = Math.floor((timespan % days) / hour);
       var minutes = Math.floor((timespan % hour) / min);
       var seconds = Math.floor((timespan % min) / sec);
-      document.getElementById(id).innerHTML = days + '<br>days<br>';
-      document.getElementById(id).innerHTML += hours + '<br>hrs<br>';
-      document.getElementById(id).innerHTML += minutes + '<br>mins<br>';
-      document.getElementById(id).innerHTML += seconds + '<br>secs<br>';
+      $('#days').html('<h1>' + days + '<br>days</h1>');
+      $('#hours').html('<h1>' + hours + '<br>hrs</h1><br>');
+      $('#minutes').html('<h1>' + minutes + '<br>mins</h1><br>');
+      $('#seconds').html('<h1>' + seconds + '<br>secs</h1><br>');
   }
 
     timer = setInterval(count, 1000);

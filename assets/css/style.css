@@ -20,8 +20,7 @@ h4 {
 } 
 
 p {
-  font-size: 10px;
-  
+  font-size: 10px; 
 }
 
  p.title{
@@ -35,9 +34,12 @@ li {
   width: 70px;
 }
 
+li h2 {
+  margin-top: -2px;
+}
+
 li p {
   font-size: 11px;
-  
 }
 
 p.title, #hours, #minutes, #seconds{
@@ -47,24 +49,33 @@ p.title, #hours, #minutes, #seconds{
   background: #fff;
 }
 
+#header {
+  padding-top: 50px;
+}
+
 #header-col {
   background: #5eb0e7;
 }
 
 ul#counter {
-  padding-left: 0px;
+  padding-left: 0;
 }
+
 ul#counter li {
   display: inline-block;
   background: #5eb0e7;
 }
 
-input#name, input#email {
+#sign-up {
+  padding-bottom: 50px;
+}
+
+/*input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
   border-radius: 1.5px;
   border: 1px solid #77858B;
   color: #F2F3F5;
-}
+}*/
 
 .form-control::-webkit-input-placeholder {
   color: #F2F3F5;
@@ -87,13 +98,11 @@ button#learn-btn {
   width: 100px;
 }
 
-
 .form-control {
   height: 50px;
 }
 
 #footer {
-	margin-top: 50px;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.4px;

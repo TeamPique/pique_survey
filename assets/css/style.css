@@ -64,3 +64,8 @@ ul#counter li {
   display: inline-block;
   padding: 20px;
 }
+
+li p {
+  font-size: 11px;
+  margin-top: -30px;
+}

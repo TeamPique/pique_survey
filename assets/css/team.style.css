@@ -6,3 +6,11 @@ body {
 	background: url('../img/team.jpg');
 	height: 600px;
 }
+
+#team-about {
+	padding-top: 40px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Nunito', sans-serif;
+}

@@ -98,14 +98,14 @@ p.title.footer {
 
 input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
-  border-radius: 1.5px;
+  border-radius: 2px;
   border: 1px solid #5eb0e7;
   color: #F2F3F5;
   height: 35px;
 }
 
 .form-group {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 button#register-btn {

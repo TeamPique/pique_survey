@@ -36,6 +36,13 @@ li p {
   font-size: 11px;
 }
 
+input#name::-webkit-input-placeholder, input#email::-webkit-input-placeholder {
+  color: #a3a3a3;
+  font-size: 11px;
+  padding-left: 10px;
+  padding-top: 3px;
+}
+
 p.title, #hours, #minutes, #seconds{
   font-size: 14px;
 }
@@ -109,9 +116,9 @@ input#name, input#email {
 }
 
 button#register-btn {
-  background-image: #377199;
+  background-image: #38709a;
   border-radius: 1.5px;
-  font-size: 12px;
+  font-size: 11px;
   width: 60%;
 }
 

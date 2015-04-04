@@ -70,19 +70,31 @@ ul#counter li {
   padding-bottom: 50px;
 }
 
-/*input#name, input#email {
+input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
   border-radius: 1.5px;
-  border: 1px solid #77858B;
+  border: 1px solid #5eb0e7;
   color: #F2F3F5;
-}*/
-
-.form-control::-webkit-input-placeholder {
-  color: #F2F3F5;
-  font-size: 12px;
+  height: 35px;
 }
 
-button#register-btn, button#learn-btn {
+.form-group {
+  margin-bottom: 5px;
+}
+
+button#register-btn {
+  background-image: #377199;
+  border-radius: 1.5px;
+  font-size: 12px;
+  width: 60%;
+}
+
+/*.form-control::-webkit-input-placeholder {
+  color: #F2F3F5;
+  font-size: 12px;
+}*/
+
+button#learn-btn {
   border-radius: 1px;
   font-size: 12px;
   background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
@@ -97,9 +109,9 @@ button#learn-btn {
   height: 30px;
   width: 100px;
 }
-
-.form-control {
-  height: 50px;
+input#name, input#email {
+  height: 30px;
+  width: 60%;
 }
 
 #footer {

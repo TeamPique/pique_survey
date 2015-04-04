@@ -22,21 +22,35 @@ body {
 }
 
 #team-contact-col {
-	border: 3px solid #a3a3a3;
+	border: 3px solid #969696;
 	border-radius: 6px;
+}
+
+li {
+	list-style-type: none;
 }
 
 h1, h2, h3, h4, h5 {
 	font-family: 'Nunito', sans-serif;
 }
 
-#team-about-col h3, #team-about-col h4 {
+#team-about-col p strong {
+	font-size: 24px;
 	font-family: 'Pontano Sans', sans-serif;
 	line-height: 33px;
 	color: #383a3d;
 }
 
-#team-about-col h4 {
-	color: #a3a3a3;
+#team-about-col p {
+	font-size: 20px;
+	color: #969696;
 	line-height: 27px;
+	padding-bottom: 20px;
+}
+
+#team-about-col li {
+	font-size: 20px;
+	line-height: 48px;
+	color: #969696;
+  text-align: -webkit-match-parent;
 }

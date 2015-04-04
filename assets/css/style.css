@@ -4,20 +4,13 @@ body {
   background-size: cover;
 }
 
-h1, h3 {
+h1, h3, h4 {
   color: #fff;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
   color: #FCFCFC;
   font-weight: 300;
 }
-
-h4 {
-  color: #4A8FBC;
-  text-shadow: 0px 1px #012;
-  font-family: 'Nunito', sans-serif;
-  font-weight: bold;
-} 
 
 p {
   font-size: 10px; 
@@ -56,7 +49,7 @@ p.title, #hours, #minutes, #seconds{
 
 #header-col {
   background: #5eb0e7;
-  opacity: .93;
+  opacity: .9;
 }
 
 ul#counter {

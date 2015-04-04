@@ -47,6 +47,7 @@ p.title, #hours, #minutes, #seconds{
 }
 #countdown-col, #register-form, #footer {
   background: #fff;
+  opacity: .9;
 }
 
 #header {
@@ -55,6 +56,7 @@ p.title, #hours, #minutes, #seconds{
 
 #header-col {
   background: #5eb0e7;
+  opacity: .93;
 }
 
 ul#counter {
@@ -88,11 +90,6 @@ button#register-btn {
   font-size: 12px;
   width: 60%;
 }
-
-/*.form-control::-webkit-input-placeholder {
-  color: #F2F3F5;
-  font-size: 12px;
-}*/
 
 button#learn-btn {
   border-radius: 1px;

@@ -26,6 +26,15 @@ body {
 	border-radius: 6px;
 }
 
+#team-contact-col h5 {
+	color: #d8765d;
+	text-transform: uppercase;
+}
+
+#team-contact-col p {
+	color: #969696;
+}
+
 li {
 	list-style-type: none;
 }

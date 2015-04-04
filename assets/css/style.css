@@ -42,6 +42,9 @@ p.title, #hours, #minutes, #seconds{
   background: #fff;
   opacity: .9;
 }
+p.title.launching-in {
+  font-size: 11px;
+}
 
 #header {
   padding-top: 50px;
@@ -61,6 +64,10 @@ img {
 #header-col h4 {
   width: 60%;
   margin-left: 20%;
+}
+
+#countdown-col {
+  padding-top: 50px;
 }
 
 ul#counter {
@@ -131,7 +138,6 @@ input#name, input#email {
 }
 
 #sign-up {
-  
   padding-left: 0;
 }
 

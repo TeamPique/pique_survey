@@ -42,7 +42,7 @@ p.title, #hours, #minutes, #seconds{
   background: #fff;
   opacity: .9;
 }
-p.title.launching-in {
+p.title.launching-in, p.title.sign-up {
   font-size: 11px;
 }
 

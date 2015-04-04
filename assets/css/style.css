@@ -80,6 +80,7 @@ ul#counter {
 ul#counter li {
   display: inline-block;
   background: #5eb0e7;
+  padding-top: 10px;
 }
 
 #register-form {

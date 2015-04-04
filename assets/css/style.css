@@ -61,8 +61,15 @@ ul#counter li {
   background: #5eb0e7;
 }
 
-#sign-up {
-  padding-bottom: 50px;
+#register-form {
+  padding-bottom: 100px;
+}
+
+p.title.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  font-size: 11px;
 }
 
 input#name, input#email {

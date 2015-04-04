@@ -1,7 +1,7 @@
 var beta = beta || {};
 
 beta.App = Backbone.View.extend({
-	el: '.wrapper',
+	el: '#beta',
 	registerTpl: _.template($('#register-template').html()),
 	initialize: function() {
 		this.form();

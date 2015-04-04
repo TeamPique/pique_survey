@@ -107,7 +107,7 @@ input#name, input#email {
   background-color:rgba(0,0,0,0) !important;
   border-radius: 2px;
   border: 1px solid #5eb0e7;
-  color: #F2F3F5;
+  color: #000;
   height: 35px;
 }
 

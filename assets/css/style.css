@@ -48,6 +48,7 @@ p.title, #hours, #minutes, #seconds{
 }
 
 #header-col {
+  padding-bottom: 50px;
   background: #5eb0e7;
   opacity: .9;
 }

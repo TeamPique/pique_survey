@@ -47,10 +47,20 @@ p.title, #hours, #minutes, #seconds{
   padding-top: 50px;
 }
 
+img {
+  width: 60px;
+}
+
 #header-col {
-  padding-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background: #5eb0e7;
   opacity: .9;
+}
+
+#header-col h4 {
+  width: 60%;
+  margin-left: 20%;
 }
 
 ul#counter {

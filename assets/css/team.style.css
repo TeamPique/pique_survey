@@ -52,6 +52,15 @@ i {
 	color: #969696;
 }
 
+#team-register-col {
+	margin-top: 20px;
+	background: #fdece8;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
 li {
 	list-style-type: none;
 }

@@ -124,8 +124,13 @@ li {
   color: #fff;
 }
 
+span {
+	text-align: center;
+}
 .team-desc i {
-	margin-top: 40%
+	margin-top: 30%;
+	padding: 0px;
+	padding-bottom: 15px;
 }
 
 .team-desc p, {

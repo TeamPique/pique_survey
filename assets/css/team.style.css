@@ -35,6 +35,12 @@ body {
 #team-contact-col {
 	border: 3px solid #dedede;
 	border-radius: 10px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+}
+
+i {
+	padding-right: 15px;
 }
 
 #team-contact-col h5 {

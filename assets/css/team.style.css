@@ -115,12 +115,21 @@ li {
 	position: absolute;
 	z-index: 1;
 	background-color: #000;
-	opacity: 0.9;
+	opacity: 0.7;
 	text-align: center;
 	height: 100%;
   width: 100%;
   top: 0;
   left: 0;
+  color: #fff;
+}
+
+.team-desc i {
+	margin-top: 40%
+}
+
+.team-desc p, {
+	margin-top: 50%
 }
 
 .hide {

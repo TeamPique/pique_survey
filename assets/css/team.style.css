@@ -43,13 +43,20 @@ i {
 	padding-right: 15px;
 }
 
+#team-contact-col {
+	color: #969696;
+}
+
+#team-contact-col h4 {
+	color: #d8765d;
+	text-transform: uppercase;
+	padding-bottom: 30px;
+}
+
 #team-contact-col h5 {
 	color: #d8765d;
 	text-transform: uppercase;
-}
-
-#team-contact-col p {
-	color: #969696;
+	padding-bottom: 20px;
 }
 
 #team-register-col {
@@ -59,6 +66,13 @@ i {
 	padding-bottom: 30px;
 	padding-left: 25px;
 	padding-right: 25px;
+}
+
+#team-register-btn {
+	height: 50px;
+  font-family: proxima-nova-alt,Helvetica,Arial,sans-serif;
+  border: 0px;
+  font-size: 20px;
 }
 
 li {

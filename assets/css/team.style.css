@@ -87,8 +87,8 @@ h1, h2, h3, h4, h5 {
 	padding-top: 50px;
 }
 
-ul#team-images {
-	padding-left: 60px;
+#team-section h2 {
+	padding-bottom: 30px;
 }
 
 ul#team-images li {

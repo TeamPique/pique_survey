@@ -43,6 +43,10 @@ h1, h2, h3, h4, h5 {
 	font-family: 'Nunito', sans-serif;
 }
 
+#team-section {
+	padding-top: 50px;
+}
+
 ul#team-images li {
 	display: inline-block;
 }

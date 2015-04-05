@@ -2,6 +2,10 @@ body {
 	background: #fff;
 }
 
+#team-nav {
+	padding: 15px
+}
+
 #team-header {
 	background: url('../img/team.jpg');
 	height: 600px;

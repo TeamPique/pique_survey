@@ -162,6 +162,10 @@ input#name, input#email {
   padding-left: 0;
 }
 
+.modal-header {
+  border: none;
+}
+
 h3.modal-message {
   color: #FCFCFC;
 }
@@ -175,17 +179,33 @@ h3.modal-message {
   margin-left: 40%;
 }
 
+#modal button.btn.btn-default {
+  text-shadow: none;
+  box-shadow: none;
+  background-image: none;
+}
+
 .modal-btn {
   float: right;
+  color: #FCFCFC;
+  background: transparent;
+  border: none;
+}
+
+.modal-body {
+  padding-bottom: 15px;
+  padding-top: 0px;
 }
 
 .modal-content {
   background: #38709a;
 }
 
-.modal-footer {
+.modal-footer p {
   text-align: center;
-  color: #ccc;
+  color: #a3a3a3;
+  margin-bottom: 0px;
+  font-size: 12px;
 }
 
 #beta-footer {

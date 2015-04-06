@@ -265,3 +265,9 @@ p.title.footer {
 		display: none;
 	}
 }
+
+@media (max-width: 767px) {
+	#team-contact-col, #team-register-col {
+		display: none;
+	}
+}

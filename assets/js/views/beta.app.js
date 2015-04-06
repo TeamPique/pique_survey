@@ -25,7 +25,7 @@ beta.App = Backbone.View.extend({
   },
 	form: function() {
     $('#register-form').html(this.registerTpl());
-    $('.footer').append('© Pique 2015. All Rights Reserved');
+    $('#register-form').append('<p class="title footer">© Pique 2015. All Rights Reserved</p>');
 		return this;
 	},
 	create: function(e) {

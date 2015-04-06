@@ -6,6 +6,10 @@ body {
 	padding: 15px
 }
 
+#team-logo {
+	cursor: pointer;
+}
+
 #team-header {
 	background: url('../img/team.jpg');
 	height: 600px;

@@ -7,7 +7,7 @@ team.App = Backbone.View.extend({
 		$('.team-desc').hide();
 	},
 	events: {
-		'mouseover .photo' 		 : 'popup',
+		'mouseover .photo' 		 		 : 'popup',
 		'click #team-register-btn' : 'beta'
 	},
 	beta: function(e) {

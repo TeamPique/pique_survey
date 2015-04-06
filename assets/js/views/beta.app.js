@@ -4,6 +4,7 @@ beta.App = Backbone.View.extend({
 	el: '#beta',
 	registerTpl: _.template($('#register-template').html()),
 	initialize: function() {
+    new team.App();
     $('#team').hide();
 		this.form();
 		this.countdown('04/22/2015 12:0 AM', 'countdown');

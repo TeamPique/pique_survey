@@ -1,11 +1,10 @@
 body {
   background: url(../img/bg2.jpg) no-repeat center center fixed;
-  color: #fff;
   background-color: #fff;
   background-size: cover;
 }
 
-h1, h3, h4 {
+#beta h1, #beta h3, #beta h4 {
   color: #fff;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
@@ -13,26 +12,21 @@ h1, h3, h4 {
   font-weight: 300;
 }
 
-p {
+#coundownt-col p {
   font-size: 10px; 
 }
 
- p.title{
+#register-form p.title, #countdown-col p.title {
   overflow: hidden;
   text-align: center;
   color: #a3a3a3;
 }
 
-li {
-  height: 70px;
-  width: 70px;
-}
-
-li h2 {
+ul#counter li h2 {
   margin-top: -2px;
 }
 
-li p {
+ul#counter li p {
   margin-top: -8px;
   font-size: 11px;
 }
@@ -44,8 +38,9 @@ input#name::-webkit-input-placeholder, input#email::-webkit-input-placeholder {
   padding-top: 3px;
 }
 
-p.title, #hours, #minutes, #seconds{
+p.title, #days, #hours, #minutes, #seconds{
   font-size: 14px;
+  color: #fff;
 }
 #countdown-col, #register-form, #footer {
   background: #fff;
@@ -59,7 +54,7 @@ p.title.launching-in, p.title.sign-up {
   padding-top: 50px;
 }
 
-img {
+#header-col img {
   width: 70px;
 }
 
@@ -91,6 +86,8 @@ ul#counter li {
   background: #5eb0e7;
   padding-top: 10px;
   border-radius: 1px;
+  height: 70px;
+  width: 70px;
 }
 
 #register-form {

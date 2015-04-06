@@ -8,7 +8,8 @@ team.App = Backbone.View.extend({
 	},
 	events: {
 		'mouseover .photo' 		 		 : 'popup',
-		'click #team-register-btn' : 'beta'
+		'click #team-register-btn' : 'beta',
+		'click #team-logo'				 : 'beta'
 	},
 	beta: function(e) {
 		e.preventDefault();

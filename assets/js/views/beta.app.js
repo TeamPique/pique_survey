@@ -34,8 +34,7 @@ beta.App = Backbone.View.extend({
 		e.preventDefault();
 		var name = $('#name').val();
 		var email = $('#email').val();
-		console.log(email);
-		this.collection.create({name: name, email: email});
+    this.collection.create({name: name, email: email});
     this.modal();
 	},
   createOnEnter: function(e) {

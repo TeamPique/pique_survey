@@ -115,7 +115,7 @@ ul#counter li {
 
 p.title.footer {
   color: #a3a3a3;
-  margin-left: -15px;
+  position:absolute;
   bottom:0;
   width:100%;
   font-size: 11px;

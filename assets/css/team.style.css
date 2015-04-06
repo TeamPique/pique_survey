@@ -252,6 +252,10 @@ ul#team-images li {
   color: #a3a3a3;
 }
 
+#team-footer p.title.footer {
+	margin-left: -15px;
+}
+
 @media (max-width: 593px) {
 	#team-statement {
 		display: none;

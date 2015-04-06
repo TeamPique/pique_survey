@@ -199,9 +199,4 @@ h3.modal-message {
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  #sign-up {
-    padding-left: 15px;
-  }
-}
 

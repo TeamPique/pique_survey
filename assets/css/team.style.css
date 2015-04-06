@@ -54,7 +54,7 @@ body {
 }
 
 #team-contact-col {
-	border: 3px solid #dedede;
+	border: 3px solid #5eb0e7;
 	border-radius: 10px;
 	padding-top: 15px;
 	padding-bottom: 25px;
@@ -75,7 +75,7 @@ i {
 }
 
 #team-contact-col h4 {
-	color: #d8765d;
+	color: #969696;
 	text-transform: uppercase;
 	padding-bottom: 30px;
 	font-family: 'Kite One', sans-serif;

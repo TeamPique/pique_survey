@@ -32,8 +32,8 @@ beta.App = Backbone.View.extend({
 	},
 	create: function(e) {
 		e.preventDefault();
-		var name = $('#name').val();
-		var email = $('#email').val();
+		var name = $('#name').val().replace(/[^@.-_][[:punct:]]/g,"");
+		var email = $('#email').val().replace(/[^@.-_][[:punct:]]/g,"");
 		console.log(email);
 		this.collection.create({name: name, email: email});
     this.modal();

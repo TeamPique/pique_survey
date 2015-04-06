@@ -9,11 +9,11 @@ body {
 }
 
 img#beta-logo {
-  width: 60px;
+  width: 65px;
 }
 
 img#beta-tagline {
-  width: 275px;
+  width: 305px;
 }
 
 #header-col {
@@ -33,14 +33,12 @@ img#beta-tagline {
 button#learn-btn {
   border-radius: 1px;
   font-size: 12px;
-  background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
-}
-
-button#learn-btn {
+  background-image: linear-gradient(to bottom, #4B92C0 0%, #426da9 100%);
   margin-top: 10px;
   margin-bottom: -10px;
-  height: 30px;
+  height: 23px;
   width: 100px;
+  line-height: 0px;
 }
 
 #beta h1, #beta h4 {
@@ -122,7 +120,7 @@ p.title.footer {
   bottom:0;
   width:100%;
   margin-left: -15px;
-  font-size: 11px;
+  font-size: 9px;
 }
 
 input#name, input#email {
@@ -221,6 +219,8 @@ h3.modal-message {
 #beta-footer a {
   bottom: 0;
   background: transparent;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 #beta-footer i {
@@ -229,7 +229,7 @@ h3.modal-message {
   color: #fff;
   height: 40px;
   width: 40px;
-  padding-left: 7px;
+  padding-left: 0px;
   padding-top: 7px;
   border-radius: 50%;
 }

@@ -4,13 +4,19 @@ beta.App = Backbone.View.extend({
 	el: '#beta',
 	registerTpl: _.template($('#register-template').html()),
 	initialize: function() {
+    $('#team').hide();
 		this.form();
 		this.countdown('04/22/2015 12:0 AM', 'countdown');
 	},
 	events: {
-		'click #register-btn': 'create',
-    'keypress .form_horizontal': 'create'
+		'click #register-btn' : 'create',
+    'click #learn-btn'    : 'team'
 	},
+  team: function() {
+    $('#beta').hide();
+    $('body').css('background', '#fff');
+    $('#team').show();
+  },
 	form: function() {
 		$('#register-form').html(this.registerTpl());
 		return this;

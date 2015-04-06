@@ -16,5 +16,3 @@ team.App = Backbone.View.extend({
 		}); 
 	},
 });
-
-new team.App();

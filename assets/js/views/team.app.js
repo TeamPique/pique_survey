@@ -4,15 +4,16 @@ var beta = beta || {};
 team.App = Backbone.View.extend({
 	el: '#team',
 	registerTpl: _.template($('#register-template').html()),
+	successTpl: _.template($('#success-template').html()),
 	initialize: function() {
 		this.form();
 		$('.team-desc').hide();
 	},
 	events: {
 		'mouseover .photo' 		 		 : 'popup',
-		'click #team-register-btn' : 'beta',
+		'click #team-beta-btn' 		 : 'beta',
 		'click #team-logo'				 : 'beta',
-		'click #team-register-btn' : 'create'
+		'click #register-btn' : 'create'
 	},
 	beta: function(e) {
 		e.preventDefault();
@@ -25,12 +26,15 @@ team.App = Backbone.View.extend({
 		$('#team-register-form').append('<p class="title footer">Proudly made in NYC</p>');
 		return this;
 	},
+	thanks: function() {
+    $('.thanks').html(this.successTpl());
+    return this;
+  },
 	create: function(e) {
 		e.preventDefault();
-		var name = $('#name').val().replace(/[^@.][[:punct:]]/g,"");
-		var email = $('#email').val().replace(/[^@.][[:punct:]]/g,"");
-		console.log(email);
-		this.collection.create({name: name, email: email});
+		var name = $('#name').val();
+		var email = $('#email').val();
+		// this.collection.create({name: name, email: email});
     this.thanks();
 	},
 	popup: function(e) {

@@ -194,6 +194,7 @@ ul#team-images li {
 
 #team-register {
 	margin-top: 60px;
+	margin-bottom: 60px;
   padding-bottom: 100px;
 }
 
@@ -218,8 +219,8 @@ ul#team-images li {
   color: #a3a3a3;
 }
 
-
 p.title.footer {
+	color: #a3a3a3;
   position:absolute;
   bottom:0;
   width:100%;

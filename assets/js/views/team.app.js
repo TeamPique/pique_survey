@@ -24,6 +24,7 @@ team.App = Backbone.View.extend({
 	},
 	form: function() {
 		$('#team-register-form').html(this.registerTpl());
+		$('#team-footer').append('<p class="title footer">Proudly made in NYC</p>');
 		return this;
 	},
 	modal: function() {

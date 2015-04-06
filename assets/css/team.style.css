@@ -196,6 +196,12 @@ ul#team-images li {
 	display: inline-block;
 }
 
+#team-statement {
+	background: #9C8CBD;
+	width: 560px;
+	height: 280px;
+}
+
 #team-register {
 	margin-top: 60px;
 	margin-bottom: 60px;

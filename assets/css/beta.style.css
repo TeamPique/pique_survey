@@ -31,10 +31,13 @@ ul#counter li p {
   font-size: 11px;
 }
 
+input#name, input#email {
+  padding-left: 13px;
+}
+
 input#name::-webkit-input-placeholder, input#email::-webkit-input-placeholder {
   color: #a3a3a3;
   font-size: 11px;
-  padding-left: 10px;
   padding-top: 3px;
 }
 

@@ -60,6 +60,12 @@ body {
 	padding-bottom: 25px;
 }
 
+#team-contact-col span i {
+	text-align: center;
+	margin-left: 43%;
+	padding-bottom: 15px;
+}
+
 i {
 	padding-right: 15px;
 }
@@ -72,6 +78,7 @@ i {
 	color: #d8765d;
 	text-transform: uppercase;
 	padding-bottom: 30px;
+	font-family: 'Kite One', sans-serif;
 }
 
 #team-contact-col h5 {

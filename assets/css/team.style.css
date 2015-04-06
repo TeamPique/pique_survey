@@ -57,34 +57,58 @@ body {
 	border: 3px solid #5eb0e7;
 	border-radius: 10px;
 	padding-top: 15px;
-	padding-bottom: 25px;
+	padding-bottom: 5px;
+	color: #969696;
+}
+
+#team-contact-col a i {
+	color: #969696;
+	padding-bottom: 30px;
 }
 
 #team-contact-col span i {
 	text-align: center;
 	margin-left: 43%;
-	padding-bottom: 15px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 }
 
 i {
 	padding-right: 15px;
 }
 
-#team-contact-col {
-	color: #969696;
-}
-
 #team-contact-col h4 {
 	color: #969696;
 	text-transform: uppercase;
-	padding-bottom: 30px;
+	padding-bottom: 5px;
 	font-family: 'Kite One', sans-serif;
+  overflow: hidden;
+  text-align: center;
+  line-height: 3.1;
+}
+    
+#team-contact-col h4:before,
+#team-contact-col h4:after {
+    background-color: #969696;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 27%;
+}
+#team-contact-col h4:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+#team-contact-col h4:after {
+    left: 0.5em;
+    margin-right: -50%;
 }
 
 #team-contact-col h5 {
 	color: #d8765d;
 	text-transform: uppercase;
-	padding-bottom: 20px;
 }
 
 #team-register-col {

@@ -4,6 +4,45 @@ body {
   background-size: cover;
 }
 
+#header {
+  padding-top: 50px;
+}
+
+img#beta-logo {
+  width: 60px;
+}
+
+img#beta-tagline {
+  width: 275px;
+}
+
+#header-col {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: #5eb0e7;
+  opacity: .9;
+}
+
+#header-col h4 {
+  width: 70%;
+  margin-left: 15%;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+button#learn-btn {
+  border-radius: 1px;
+  font-size: 12px;
+  background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
+}
+
+button#learn-btn {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  height: 30px;
+  width: 100px;
+}
+
 #beta h1, #beta h4 {
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
@@ -50,28 +89,6 @@ p.title, #days, #hours, #minutes, #seconds{
 }
 p.title.launching-in, p.title.sign-up {
   font-size: 11px;
-}
-
-#header {
-  padding-top: 50px;
-}
-
-#header-col img {
-  width: 70px;
-}
-
-#header-col {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  background: #5eb0e7;
-  opacity: .9;
-}
-
-#header-col h4 {
-  width: 70%;
-  margin-left: 15%;
-  font-size: 20px;
-  font-weight: 300;
 }
 
 #countdown-col {
@@ -122,21 +139,12 @@ button#register-btn {
   width: 60%;
 }
 
-button#learn-btn {
-  border-radius: 1px;
-  font-size: 12px;
-  background-image: linear-gradient(to bottom, #4B92C0 0%, #427FA9 100%);
-}
-
 button#register-btn:active, button#learn-btn:active {
   vertical-align: top;
   padding: 8px 13px 6px;
 }
 
-button#learn-btn {
-  height: 30px;
-  width: 100px;
-}
+
 input#name, input#email {
   height: 30px;
   width: 60%;

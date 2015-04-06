@@ -163,7 +163,12 @@ input#name, input#email {
 }
 
 h3.modal-message {
-  color: #5eb0e7;
+  color: #FCFCFC;
+}
+
+.modal-title {
+  background: transparent;
+  opacity: .9;
 }
 
 .modal-title img {
@@ -174,8 +179,13 @@ h3.modal-message {
   float: right;
 }
 
+.modal-content {
+  background: #38709a;
+}
+
 .modal-footer {
   text-align: center;
+  color: #ccc;
 }
 
 #beta-footer {

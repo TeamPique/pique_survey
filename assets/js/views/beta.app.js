@@ -24,7 +24,8 @@ beta.App = Backbone.View.extend({
     $('#team').show();
   },
 	form: function() {
-		$('#register-form').html(this.registerTpl());
+    $('#register-form').html(this.registerTpl());
+    $('.footer').append('© Pique 2015. All Rights Reserved');
 		return this;
 	},
 	create: function(e) {

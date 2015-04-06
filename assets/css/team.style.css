@@ -191,3 +191,20 @@ h1, h2, h3, h4, h5 {
 ul#team-images li {
 	display: inline-block;
 }
+
+#team-register-form p.title {
+  overflow: hidden;
+  text-align: center;
+  color: #a3a3a3;
+}
+
+#team-register-form {
+  padding-bottom: 100px;
+}
+
+p.title.footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  font-size: 11px;
+}

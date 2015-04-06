@@ -1,5 +1,7 @@
 var beta = beta || {};
 
+var ENTER_KEY = 13
+
 var collection = new beta.Users();
 new beta.App({collection: collection});
 

@@ -3,7 +3,7 @@ var beta = beta || {};
 beta.App = Backbone.View.extend({
 	el: '#beta',
 	registerTpl: _.template($('#register-template').html()),
-  successTpl: _.template($('#success-template').html()),
+  modalTpl: _.template($('#modal-template').html()),
 	initialize: function() {
     new team.App({collection: collection});
     $('#team').hide();
@@ -14,8 +14,8 @@ beta.App = Backbone.View.extend({
 		'click #register-btn' : 'create',
     'click #learn-btn'    : 'team'
 	},
-  thanks: function() {
-    $('#beta-thanks').html(this.successTpl());
+  modal: function() {
+    $('#beta-thanks').html(this.modalTpl());
     return this;
   },
   team: function() {
@@ -33,9 +33,19 @@ beta.App = Backbone.View.extend({
 		var name = $('#name').val();
 		var email = $('#email').val();
 		console.log(email);
-		// this.collection.create({name: name, email: email});
-    this.thanks();
+		this.collection.create({name: name, email: email});
+    this.modal();
 	},
+  createOnEnter: function(e) {
+    if (e.which !== ENTER_KEY || !this.$input.val().trim()) {
+      return;
+    }
+    var name = $('#name').val();
+    var email = $('#email').val();
+    console.log(email);
+    this.collection.create({name: name, email: email});
+    this.thanks();
+  },
 	countdown: function(date, id) {
     var launch = new Date(date);
     var sec = 1000;

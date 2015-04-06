@@ -61,7 +61,9 @@ button#learn-btn {
 }
 
 ul#counter li h2 {
-  margin-top: -2px;
+  margin-top: 3px;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 ul#counter li p {

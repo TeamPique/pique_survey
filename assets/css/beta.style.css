@@ -54,7 +54,7 @@ button#learn-btn {
   font-size: 10px; 
 }
 
-#register-form p.title, #countdown-col p.title {
+#register-form p.title.sign-up, #countdown-col p.title.launching-in {
   overflow: hidden;
   text-align: center;
   color: #a3a3a3;
@@ -100,11 +100,12 @@ p.title.launching-in, p.title.sign-up {
 
 ul#counter {
   padding-left: 0;
+  opacity: 1px;
 }
 
 ul#counter li {
   display: inline-block;
-  background: #5eb0e7;
+  background-color: rgba(94, 176, 231, 1);
   padding-top: 10px;
   border-radius: 1px;
   height: 70px;
@@ -116,7 +117,7 @@ ul#counter li {
 }
 
 p.title.footer {
-  color: #a3a3a3;
+  color: #265a88;
   position:absolute;
   bottom:0;
   width:100%;

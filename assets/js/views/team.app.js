@@ -20,6 +20,7 @@ team.App = Backbone.View.extend({
 		e.preventDefault();
 		$('#team').hide();
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
+		new beta.App()
 		$('#beta').show();
 	},
 	form: function() {

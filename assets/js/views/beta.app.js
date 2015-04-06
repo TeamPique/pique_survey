@@ -15,7 +15,7 @@ beta.App = Backbone.View.extend({
     'click #learn-btn'    : 'team'
 	},
   thanks: function() {
-    $('.thanks').html(this.successTpl());
+    $('#beta-thanks').html(this.successTpl());
     return this;
   },
   team: function() {

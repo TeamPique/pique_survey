@@ -4,7 +4,7 @@ body {
   background-size: cover;
 }
 
-#beta h1, #beta h3, #beta h4 {
+#beta h1, #beta h4 {
   color: #fff;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
@@ -150,6 +150,14 @@ input#name, input#email {
 
 #sign-up {
   padding-left: 0;
+}
+
+h3.modal-message {
+  color: #5eb0e7;
+}
+
+.modal-btn {
+  float: right;
 }
 
 @media (max-width: 768px) {

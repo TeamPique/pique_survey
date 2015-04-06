@@ -27,7 +27,7 @@ team.App = Backbone.View.extend({
 		return this;
 	},
 	thanks: function() {
-    $('.thanks').html(this.successTpl());
+    $('#team-thanks').html(this.successTpl());
     return this;
   },
 	create: function(e) {

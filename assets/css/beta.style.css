@@ -5,7 +5,6 @@ body {
 }
 
 #beta h1, #beta h4 {
-  color: #fff;
   font-family: 'Nunito', sans-serif;
   padding-bottom: 10px;
   color: #FCFCFC;
@@ -169,6 +168,27 @@ h3.modal-message {
 
 .modal-footer {
   text-align: center;
+}
+
+#beta-footer {
+  margin-bottom: 10px;
+  padding-top: 40px;
+}
+
+#beta-footer a {
+  bottom: 0;
+  background: transparent;
+}
+
+#beta-footer i {
+  background: #5eb0e7;
+  opacity: .9;
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  padding-left: 7px;
+  padding-top: 7px;
+  border-radius: 50%;
 }
 
 @media (max-width: 768px) {

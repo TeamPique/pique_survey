@@ -23,7 +23,7 @@ body {
 	margin-top: 10%;
 	text-transform: uppercase;
 	font-size: 50px;
-	font-family: proxima-nova-alt,Helvetica,Arial,sans-serif;
+	font-family: 'Pontano Sans', sans-serif;
 	font-weight: 800;
 	display: block;
 }
@@ -122,7 +122,7 @@ i {
 
 #team-beta-btn {
 	height: 50px;
-  font-family: proxima-nova-alt,Helvetica,Arial,sans-serif;
+  font-family: 'Pontano Sans', sans-serif;
   border: 0px;
   font-size: 20px;
 }
@@ -205,10 +205,24 @@ ul#team-images li {
 
 #team-statement-content {
 	position: absolute;
-	margin-top: 50px;
+	margin-top: 36px;
 	text-align: left;
 	margin-left: 40px;
 	margin-right: 40px;
+}
+
+#team-statement-content h3 {
+	font-size: 30px;
+	line-height: 35px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+#team-statement-content p {
+  font-size: 18px;
+  line-height: 29px;
+  color: #e5d6f4;
+  font-family: 'Nunito', sans-serif;
 }
 
 #team-register {

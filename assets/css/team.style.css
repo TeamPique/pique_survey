@@ -197,9 +197,18 @@ ul#team-images li {
 }
 
 #team-statement {
+	position: relative;
 	background: #9C8CBD;
 	width: 560px;
 	height: 280px;
+}
+
+#team-statement-content {
+	position: absolute;
+	margin-top: 50px;
+	text-align: left;
+	margin-left: 40px;
+	margin-right: 40px;
 }
 
 #team-register {

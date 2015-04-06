@@ -3,7 +3,9 @@ var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
+	registerTpl: _.template($('#register-template').html()),
 	initialize: function() {
+		this.form();
 		$('.team-desc').hide();
 	},
 	events: {
@@ -16,6 +18,10 @@ team.App = Backbone.View.extend({
 		$('#team').hide();
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
 		$('#beta').show();
+	},
+	form: function() {
+		$('#team-register-form').html(this.registerTpl());
+		return this;
 	},
 	popup: function(e) {
 		e.preventDefault();

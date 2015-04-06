@@ -8,12 +8,13 @@ team.App = Backbone.View.extend({
 	},
 	events: {
 		'mouseover .photo' 		 : 'popup',
-		'click #team-register' : 'beta'
+		'click #team-register-btn' : 'beta'
 	},
 	beta: function(e) {
 		e.preventDefault();
-		this.$el.hide();
-		
+		$('#team').hide();
+		$('body').css('background', 'url(assets/img/bg2.jpg)');
+		$('#beta').show();
 	},
 	popup: function(e) {
 		e.preventDefault();

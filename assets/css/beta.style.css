@@ -156,8 +156,16 @@ h3.modal-message {
   color: #5eb0e7;
 }
 
+.modal-title img {
+  margin-left: 40%;
+}
+
 .modal-btn {
   float: right;
+}
+
+.modal-footer {
+  text-align: center;
 }
 
 @media (max-width: 768px) {

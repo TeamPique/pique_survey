@@ -10,10 +10,11 @@ team.App = Backbone.View.extend({
 		$('.team-desc').hide();
 	},
 	events: {
-		'mouseover .photo' 		 : 'popup',
-		'click #team-beta-btn' : 'beta',
-		'click #team-logo'		 : 'beta',
-		'click #register-btn'  : 'create'
+		'mouseover .photo' 		 		: 'popup',
+		'click #team-beta-btn' 		: 'beta',
+		'click #team-logo'		 		: 'beta',
+		'click #register-btn'  		: 'create',
+		'keypress .register-form' : 'createOnEnter'
 	},
 	beta: function(e) {
 		e.preventDefault();
@@ -37,6 +38,16 @@ team.App = Backbone.View.extend({
 		this.collection.create({name: name, email: email});
     this.modal();
 	},
+  createOnEnter: function(e) {
+    if (e.which !== ENTER_KEY || !this.$input.val().trim()) {
+      return;
+    }
+    var name = $('#name').val();
+    var email = $('#email').val();
+    console.log(email);
+    this.collection.create({name: name, email: email});
+    this.modal();
+  },
 	popup: function(e) {
 		e.preventDefault();
 		var $description = $(e.currentTarget);

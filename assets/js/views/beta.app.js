@@ -11,8 +11,9 @@ beta.App = Backbone.View.extend({
 		this.countdown('04/22/2015 12:0 AM', 'countdown');
 	},
 	events: {
-		'click #register-btn' : 'create',
-    'click #learn-btn'    : 'team'
+		'click #register-btn'     : 'create',
+    'click #learn-btn'        : 'team',
+    'keypress .register-form' : 'createOnEnter'
 	},
   modal: function() {
     $('#beta-thanks').html(this.modalTpl());
@@ -21,6 +22,7 @@ beta.App = Backbone.View.extend({
   team: function() {
     $('#beta').hide();
     $('body').css('background', '#fff');
+    $('#register-form').empty();
     $('#team').show();
   },
 	form: function() {
@@ -44,7 +46,7 @@ beta.App = Backbone.View.extend({
     var email = $('#email').val();
     console.log(email);
     this.collection.create({name: name, email: email});
-    this.thanks();
+    this.modal();
   },
 	countdown: function(date, id) {
     var launch = new Date(date);

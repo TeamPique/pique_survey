@@ -259,3 +259,9 @@ p.title.footer {
   width:100%;
   font-size: 11px;
 }
+
+@media (max-width: 593px) {
+	#team-statement {
+		display: none;
+	}
+}

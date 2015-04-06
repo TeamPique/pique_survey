@@ -1,4 +1,5 @@
 var team = team || {};
+var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
@@ -8,6 +9,11 @@ team.App = Backbone.View.extend({
 	events: {
 		'mouseover .photo' 		 : 'popup',
 		'click #team-register' : 'beta'
+	},
+	beta: function(e) {
+		e.preventDefault();
+		this.$el.hide();
+		
 	},
 	popup: function(e) {
 		e.preventDefault();

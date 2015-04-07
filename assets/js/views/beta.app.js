@@ -32,19 +32,22 @@ beta.App = Backbone.View.extend({
 	},
 	create: function(e) {
 		e.preventDefault();
-		var name = $('#name').val();
-		var email = $('#email').val();
-    this.collection.create({name: name, email: email});
+		var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+		var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+    if (name != "" && email != ""){
+      this.collection.create({name: name, email: email});
+    }
     this.modal();
 	},
   createOnEnter: function(e) {
     if (e.which !== ENTER_KEY || !this.$input.val().trim()) {
       return;
     }
-    var name = $('#name').val();
-    var email = $('#email').val();
-    console.log(email);
-    this.collection.create({name: name, email: email});
+    var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+    var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+    if (name != "" && email != ""){
+      this.collection.create({name: name, email: email});
+    }
     this.modal();
   },
 	countdown: function(date) {

@@ -313,10 +313,16 @@
 						<div class="modal-body">
 						<div class="container-fluid">
 		          <div class="row">
-								
-								<div class="col-xs-12 col-sm-12 text-center">
-									<h3 class="modal-message">Thanks for registering, <%= $('#name').val() %>!</h3>
-								</div>
+
+								<% if ($('#name').val() === ""){ %>
+									<div class="col-xs-12 col-sm-12 text-center">
+										<h3 class="modal-message">Please enter both a name and email before submitting.</h3>
+									</div>
+								<% } else {%>
+									<div class="col-xs-12 col-sm-12 text-center">
+										<h3 class="modal-message">Thanks for registering, <%= $('#name').val() %>!</h3>
+									</div>
+								<% } %>
 								
 							</div>
 						</div>

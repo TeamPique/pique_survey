@@ -33,7 +33,7 @@ beta.App = Backbone.View.extend({
 	create: function(e) {
 		e.preventDefault();
 		var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
-		var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+		var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"").toLowerCase().join("");
     if (name != "" && email != ""){
       this.collection.create({name: name, email: email});
     }
@@ -44,7 +44,7 @@ beta.App = Backbone.View.extend({
       return;
     }
     var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
-    var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+    var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"").toLowerCase().join("");
     if (name != "" && email != ""){
       this.collection.create({name: name, email: email});
     }

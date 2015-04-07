@@ -2,9 +2,8 @@ var beta = beta || {};
 
 var ENTER_KEY = 13
 
-Backbone.sync = function(method, collection, options) {
-        console.log(options)
-        console.log(collection)
+Backbone.sync = function(method, model, collection, options) {
+
           // Backwards compatibility with Backbone <= 0.3.3
   if (typeof options == 'function') {
     options = {

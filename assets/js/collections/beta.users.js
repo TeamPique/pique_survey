@@ -12,7 +12,7 @@ beta.Users = Backbone.Collection.extend({
         // options.xhrFields = {
         //   withCredentials: true
         // };
-          jqXHR.setRequestHeader('X-CSRF-Token', that.get('_csrf'));
+          jqXHR.setRequestHeader('Access-Control-Allow-Origin', 'http://piqueapp.github.io');
       });
     },
 	url: 'http://pique-beta-serv.herokuapp.com/user'

@@ -13,7 +13,6 @@ beta.Users = Backbone.Collection.extend({
         //   withCredentials: true
         // };
           jqXHR.setRequestHeader('X-CSRF-Token', that.get('_csrf'));
-        }
       });
     },
 	url: 'http://pique-beta-serv.herokuapp.com/user'

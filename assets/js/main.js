@@ -2,7 +2,7 @@ var beta = beta || {};
 
 var ENTER_KEY = 13
 
-Backbone.sync = function(method, model, collection, options) {
+Backbone.sync = function(method, collection, options) {
 
           // Backwards compatibility with Backbone <= 0.3.3
   if (typeof options == 'function') {
@@ -22,13 +22,10 @@ Backbone.sync = function(method, model, collection, options) {
   };
 
 
-  var store = model.customStorage || model.collection.customStorage;
+  var store = collection.customStorage || collection.customStorage;
 
   switch (method) {
-    case 'read':    model.id ? store.read({id: model.id}, resp) : store.readAll(resp); break;
-    case 'create':  store.create(model.attributes, resp); break;
-    case 'update':  store.update(model.attributes, resp); break;
-    case 'delete':  store.delete(model.id, resp); break;
+    case 'create':  store.create(collection.attributes, resp); break;
   }
 }
 

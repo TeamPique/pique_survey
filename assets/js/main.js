@@ -24,6 +24,8 @@ Backbone.sync = function(method, collection, options) {
 
   var store = collection.customStorage || collection.customStorage;
 
+  console.log(store)
+
   switch (method) {
     case 'create':  store.create(collection.attributes, resp); break;
   }

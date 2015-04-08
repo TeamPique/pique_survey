@@ -17,6 +17,7 @@ beta.App = Backbone.View.extend({
 	},
   team: function() {
     this.$el.hide();
+    $('#register-form').empty();
     $('#team').show();
   },
 	form: function() {

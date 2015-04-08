@@ -41,6 +41,9 @@ _.extend(Backbone.View.prototype, {
 
       this.modal()
     }
+
+    $('#name').val('');
+    $('#email').val('');
   },
 	createOnClick: function(e) {
 		e.preventDefault();

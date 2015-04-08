@@ -1,6 +1,6 @@
 _.extend(Backbone.View.prototype, {
-  registerTpl: _.template($('#register-template').html()),
-  modalTpl: _.template($('#modal-template').html()),
+  registerTpl : _.template($('#register-template').html()),
+  modalTpl    : _.template($('#modal-template').html()),
   initialize: function() {
     this.send();
     this.form();
@@ -24,22 +24,23 @@ _.extend(Backbone.View.prototype, {
     var name = $('#name').val();
     var email = $('#email').val();
 
-    if (email !== "") {
-      if (!this.validate(email)) {
-        $('#email-error').text('Please enter a valid email address');
-        $('#email-error').css({color: 'red'});
-        $('#email').focus();
-        return false;  
-      }
-    } 
+    if (!this.validate(email)) {
 
-    this.collection.create({
-        name: name,
-        email: email
-      });
+      $('#email-error').text('Please enter a valid email address');
+      $('#email-error').css({color: 'red'});
+      $('#email').focus();
+      
+      return false;
 
-    this.modal()
-    
+    }  else {
+
+      this.collection.create({
+          name: name,
+          email: email
+        });
+
+      this.modal()
+    }
   },
 	createOnClick: function(e) {
 		e.preventDefault();

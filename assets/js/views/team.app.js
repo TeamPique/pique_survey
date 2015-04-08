@@ -16,7 +16,7 @@ team.App = Backbone.View.extend({
 		'keypress .register-form' : 'createOnEnter'
 	},
 	beta: function() {
-		$('#team').hide();
+		this.$el.hide();
 		$('#beta').show();
 	},
 	form: function() {

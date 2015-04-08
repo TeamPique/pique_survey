@@ -19,6 +19,7 @@ team.App = Backbone.View.extend({
 		e.preventDefault();
 		$('#team').hide();
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
+		$('body').css('background-size', 'cover');
 		new beta.App()
 		$('#beta').show();
 		router.navigate('', {trigger: true});

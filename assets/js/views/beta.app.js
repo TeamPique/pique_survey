@@ -11,7 +11,7 @@ beta.App = Backbone.View.extend({
 		this.countdown('04/24/2015 12:0 AM');
 	},
 	events: {
-		'click #register-btn'     : 'create',
+		'click #register-btn'     : 'createOnClick',
     'click #learn-btn'        : 'team',
     'keypress .register-form' : 'createOnEnter'
 	},
@@ -30,22 +30,21 @@ beta.App = Backbone.View.extend({
     $('#register-form').append('<p class="title footer">© Pique 2015. All Rights Reserved</p>');
 		return this;
 	},
-	create: function(e) {
-		e.preventDefault();
-		var name = $('#name').val();
-		var email = $('#email').val();
+  create: function() {
+    var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
+    var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"").toLowerCase().replace(" ","");
     this.collection.create({name: name, email: email});
     this.modal();
+  },
+	createOnClick: function(e) {
+		e.preventDefault();
+    this.create();
 	},
   createOnEnter: function(e) {
     if (e.which !== ENTER_KEY || !this.$input.val().trim()) {
       return;
     }
-    var name = $('#name').val();
-    var email = $('#email').val();
-    console.log(email);
-    this.collection.create({name: name, email: email});
-    this.modal();
+    this.create();
   },
 	countdown: function(date) {
     var launch = new Date(date);

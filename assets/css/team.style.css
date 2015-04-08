@@ -3,27 +3,43 @@ body {
 }
 
 #team-nav {
-	padding: 15px
+	padding: 3px;
+	background: url('../img/crossword.png');
 }
 
 #team-logo {
 	cursor: pointer;
+	background: transparent;
+}
+
+#team-logo img {
+	height: 30px;
 }
 
 #team-header {
-	background: url('../img/team.jpg');
 	height: 600px;
 }
 
+#team-text {
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+	height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+
 #team-header h4 {
-	margin-top: 20%;
+	margin-top: 25%;
 	text-transform: uppercase;
-	color: #fff;
+	color: #FCFCFC;
 	font-size: 20px;
 }
 
 #team-header h1 {
-	color: #fff;
+	color: #FCFCFC;
 	margin-top: 10%;
 	text-transform: uppercase;
 	font-size: 50px;

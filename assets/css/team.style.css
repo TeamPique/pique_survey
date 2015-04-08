@@ -6,9 +6,8 @@ body {
 	background: url('../img/crossword.png');
 }
 
-img#team-nav-img {
+#team-nav-col img#team-nav-img {
 	width: 50px;
-	text-align: center;
 }
 
 #team-nav-img:hover {

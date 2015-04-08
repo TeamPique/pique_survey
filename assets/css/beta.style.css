@@ -23,6 +23,10 @@ img#beta-tagline {
   opacity: .9;
 }
 
+#header-col a {
+  background: transparent;
+}
+
 #header-col h4 {
   width: 70%;
   margin-left: 15%;

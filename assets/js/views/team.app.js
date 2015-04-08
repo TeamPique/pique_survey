@@ -21,6 +21,7 @@ team.App = Backbone.View.extend({
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
 		new beta.App()
 		$('#beta').show();
+		router.navigate('', {trigger: true});
 	},
 	form: function() {
 		$('#team-register-form').html(this.registerTpl());

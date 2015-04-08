@@ -3,7 +3,6 @@ var beta = beta || {};
 beta.App = Backbone.View.extend({
 	el: '#beta',
   modalElem: $('#beta-thanks'),
-
 	initialize: function() {
     new team.App({collection: collection});
     $('#team').hide();
@@ -22,6 +21,7 @@ beta.App = Backbone.View.extend({
     $('body').css('background', '#fff');
     $('#register-form').empty();
     $('#team').show();
+    router.navigate('team', {trigger: true});
   },
 	form: function() {
     $('#register-form').html(this.registerTpl());

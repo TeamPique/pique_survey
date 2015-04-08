@@ -10,6 +10,14 @@
 	cursor: pointer;
 }
 
+#team-header-text i {
+  color: #a3a3a3;
+}
+
+#team-header-text i:hover {
+  cursor: pointer;
+}
+
 #team-header-col {
 	padding-bottom: 15px;
 }
@@ -22,24 +30,14 @@
   width: 100%;
   top: 0;
   left: 0;
-  color: #fff;
-}
-
-#team-header-text h4 {
-	margin-top: 26%;
-	padding: 0px;
-	text-transform: uppercase;
-	color: #FCFCFC;
-	color: #4C94C4;
-	font-size: 15px;
+  color: #a3a3a3;
 }
 
 #team-header-text h1 {
-	color: #FCFCFC;
-	margin-top: 1%;
+	margin-top: 28%;
 	text-transform: uppercase;
-	font-size: 30px;
-	color: #4C94C4;
+	font-size: 37px;
+	color: #FCFCFC;
 	font-family: 'Pontano Sans', sans-serif;
 	font-weight: 800;
 	display: block;

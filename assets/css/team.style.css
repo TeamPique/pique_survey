@@ -12,6 +12,7 @@
 
 #team-header-text i {
   color: #a3a3a3;
+  margin-top: 15%;
 }
 
 #team-header-text i:hover {
@@ -46,6 +47,16 @@
 #team-about-row {
 	padding-top: 50px;
 	height: 100vh;
+}
+
+#team-about-arrow i {
+  color: #a3a3a3;
+  margin-top: 5%;
+  text-align: center;
+}
+
+#team-about-arrow i:hover {
+  cursor: pointer;
 }
 
 #team-about-col p strong {

@@ -14,7 +14,8 @@ team.App = Backbone.View.extend({
 		'click #team-nav-img'	 		: 'beta',
 		'click #register-btn'  		: 'createOnClick',
 		'keypress .register-form' : 'createOnEnter',
-		'click .smoothScroll'			: 'pan'
+		'click #team-header-arrow': 'pan',
+		'click #team-about-arrow'	: 'panTeam'
 	},
 	beta: function(e) {
 		e.preventDefault();
@@ -35,6 +36,13 @@ team.App = Backbone.View.extend({
 		console.log('sup');
   	$('html, body').animate({
 	    scrollTop: $('#team-about').offset().top
+	  }, 1000);
+	},
+	panTeam: function(e) {
+		e.preventDefault();
+		console.log('sup');
+  	$('html, body').animate({
+	    scrollTop: $('#team-section').offset().top
 	  }, 1000);
 	},
 	popup: function(e) {

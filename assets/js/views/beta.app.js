@@ -8,7 +8,7 @@ beta.App = Backbone.View.extend({
     new team.App({collection: collection});
     $('#team').hide();
 		this.form();
-		this.countdown('04/22/2015 12:0 AM');
+		this.countdown('04/24/2015 12:0 AM');
 	},
 	events: {
 		'click #register-btn'     : 'create',

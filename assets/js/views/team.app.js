@@ -48,8 +48,8 @@ team.App = Backbone.View.extend({
 	popup: function(e) {
 		e.preventDefault();
 		var $description = $(e.currentTarget);
-		$description.find('.team-desc').fadeIn('slow').mouseleave(function() {
-			$('.team-desc').fadeOut('slow');
+		$description.find('.team-desc').fadeIn('fast').mouseleave(function() {
+			$('.team-desc').fadeOut('fast');
 		}); 
 	},
 });

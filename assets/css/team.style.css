@@ -11,6 +11,10 @@ img#team-nav-img {
 	text-align: center;
 }
 
+#team-nav-img:hover {
+	cursor: pointer;
+}
+
 #team-header-col {
 	padding-bottom: 15px;
 }

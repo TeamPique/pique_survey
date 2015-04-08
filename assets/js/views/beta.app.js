@@ -2,21 +2,24 @@ var beta = beta || {};
 
 beta.App = Backbone.View.extend({
 	el: '#beta',
-  modalElem: $('#beta-modal'),
+  modalElem: $('#beta-thanks'),
+
 	initialize: function() {
     new team.App({collection: collection});
     $('#team').hide();
 		this.form();
 		this.countdown('04/24/2015 12:0 AM');
     ref = new Firebase(FIREBASE_URL + '/users');
+    this.send();
 	},
 	events: {
-    'click #learn-btn'        : 'team',
 		'click #register-btn'     : 'createOnClick',
+    'click #learn-btn'        : 'team',
     'keypress .register-form' : 'createOnEnter'
 	},
   team: function() {
-    this.$el.hide();
+    $('#beta').hide();
+    $('body').css('background', '#fff');
     $('#register-form').empty();
     $('#team').show();
   },

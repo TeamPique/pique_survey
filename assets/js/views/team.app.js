@@ -3,7 +3,7 @@ var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
-	modalElem: $('#team-modal'),
+	modalElem: $('#team-thanks'),
 	initialize: function() {
 		this.form();
 		$('.team-desc').hide();
@@ -15,10 +15,11 @@ team.App = Backbone.View.extend({
 		'click #register-btn'  		: 'createOnClick',
 		'keypress .register-form' : 'createOnEnter'
 	},
-	beta: function() {
-		this.$el.hide();
-		$('#team-register-form').empty();
-		new beta.App();
+	beta: function(e) {
+		e.preventDefault();
+		$('#team').hide();
+		$('body').css('background', 'url(assets/img/bg2.jpg)');
+		new beta.App()
 		$('#beta').show();
 	},
 	form: function() {

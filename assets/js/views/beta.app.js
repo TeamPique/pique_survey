@@ -9,17 +9,14 @@ beta.App = Backbone.View.extend({
 		this.form();
 		this.countdown('04/24/2015 12:0 AM');
     ref = new Firebase(FIREBASE_URL + '/users');
-    this.send();
 	},
 	events: {
-		'click #register-btn'     : 'createOnClick',
     'click #learn-btn'        : 'team',
+		'click #register-btn'     : 'createOnClick',
     'keypress .register-form' : 'createOnEnter'
 	},
   team: function() {
     $('#beta').hide();
-    $('body').css('background', '#fff');
-    $('#register-form').empty();
     $('#team').show();
   },
 	form: function() {

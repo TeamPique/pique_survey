@@ -1,5 +1,5 @@
-body {
-  background: url(../img/bg2.jpg) no-repeat center center fixed;
+#beta {
+  background: url(../img/bg2.jpg) no-repeat center fixed;
   background-color: #fff;
   background-size: cover;
 }

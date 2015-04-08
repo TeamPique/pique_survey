@@ -7,7 +7,7 @@ beta.App = Backbone.View.extend({
     new team.App({collection: collection});
     $('#team').hide();
 		this.form();
-		this.countdown('04/24/2015 12:0 AM');
+		this.countdown('04/24/2015 7:0 PM');
     ref = new Firebase(FIREBASE_URL + '/users');
     this.send();
 	},

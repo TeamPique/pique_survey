@@ -9,6 +9,8 @@ beta.App = Backbone.View.extend({
     $('#team').hide();
 		this.form();
 		this.countdown('04/24/2015 12:0 AM');
+    ref = new Firebase(FIREBASE_URL + '/users');
+    this.send();
 	},
 	events: {
 		'click #register-btn'     : 'createOnClick',
@@ -30,11 +32,18 @@ beta.App = Backbone.View.extend({
     $('#register-form').append('<p class="title footer">© Pique 2015. All Rights Reserved</p>');
 		return this;
 	},
+  send: function() {
+    ref.on("value", function(snapshot) {
+      console.log('Firebase Collection', snapshot.val(), this.modal());
+      }.bind(this), function (errorObject) {
+          console.log("The read failed: " + errorObject.code);
+    });
+  },
   create: function() {
-    var name = $('#name').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"");
-    var email = $('#email').val().replace(/[^a-zA-Z0-9 @.\-\_\^]/g,"").toLowerCase().replace(" ","");
-    this.collection.create({name: name, email: email});
-    this.modal();
+    var name = $('#name').val()
+    var email = $('#email').val();
+    this.collection.create({
+        name: name, email: email});
   },
 	createOnClick: function(e) {
 		e.preventDefault();
@@ -44,6 +53,7 @@ beta.App = Backbone.View.extend({
     if (e.which !== ENTER_KEY || !this.$input.val().trim()) {
       return;
     }
+    e.preventDefault();
     this.create();
   },
 	countdown: function(date) {

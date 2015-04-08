@@ -44,6 +44,10 @@
 	display: block;
 }
 
+#team-header-text h2 {
+	color: #FCFCFC;
+}
+
 #team-about-row {
 	padding-top: 50px;
 	height: 100vh;
@@ -280,6 +284,12 @@ ul#team-images li {
 @media (max-width: 593px) {
 	#team-statement {
 		display: none;
+	}
+}
+
+@media (max-width: 750px) {
+	#team-header-text h1 {
+		font-size: 19px;
 	}
 }
 

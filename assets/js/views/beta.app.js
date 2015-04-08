@@ -2,7 +2,7 @@ var beta = beta || {};
 
 beta.App = Backbone.View.extend({
 	el: '#beta',
-  modalElem: $('#beta-thanks'),
+  modalElem: $('#beta-modal'),
 	initialize: function() {
     new team.App({collection: collection});
     $('#team').hide();

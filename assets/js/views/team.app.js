@@ -3,7 +3,7 @@ var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
-	modalElem: $('#team-thanks'),
+	modalElem: $('#team-modal'),
 	initialize: function() {
 		this.form();
 		$('.team-desc').hide();

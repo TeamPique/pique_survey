@@ -3,8 +3,7 @@ var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
-	registerTpl: _.template($('#register-template').html()),
-	modalTpl: _.template($('#modal-template').html()),
+	modalElem: $('#team-thanks'),
 	initialize: function() {
 		this.form();
 		$('.team-desc').hide();
@@ -28,17 +27,6 @@ team.App = Backbone.View.extend({
 		$('#team-footer').append('<p class="title footer">Proudly made in NYC</p>');
 		return this;
 	},
-	modal: function() {
-    $('#team-thanks').html(this.modalTpl());
-    return this;
-  },
-  send: function() {
-    ref.on("value", function(snapshot) {
-      console.log('Firebase Collection', snapshot.val());
-      }.bind(this), function (errorObject) {
-          console.log("The read failed: " + errorObject.code);
-    });
-  },
 	popup: function(e) {
 		e.preventDefault();
 		var $description = $(e.currentTarget);

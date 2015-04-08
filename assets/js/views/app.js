@@ -1,4 +1,10 @@
 _.extend(Backbone.View.prototype, {
+  registerTpl: _.template($('#register-template').html()),
+  modalTpl: _.template($('#modal-template').html()),
+  modal: function() {
+    this.modalElem.html(this.modalTpl());
+    return this;
+  },
 	send: function() {
     ref.on("value", function(snapshot) {
       console.log('Firebase Collection', snapshot.val());

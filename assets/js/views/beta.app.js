@@ -2,8 +2,7 @@ var beta = beta || {};
 
 beta.App = Backbone.View.extend({
 	el: '#beta',
-	registerTpl: _.template($('#register-template').html()),
-  modalTpl: _.template($('#modal-template').html()),
+  modalElem: $('#beta-thanks'),
 	initialize: function() {
     new team.App({collection: collection});
     $('#team').hide();
@@ -17,10 +16,6 @@ beta.App = Backbone.View.extend({
     'click #learn-btn'        : 'team',
     'keypress .register-form' : 'createOnEnter'
 	},
-  modal: function() {
-    $('#beta-thanks').html(this.modalTpl());
-    return this;
-  },
   team: function() {
     $('#beta').hide();
     $('body').css('background', '#fff');

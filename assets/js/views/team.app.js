@@ -9,12 +9,12 @@ team.App = Backbone.View.extend({
 		$('.team-desc').hide();
 	},
 	events: {
-		'mouseover .photo' 		 			: 'popup',
-		'click #team-beta-btn' 			: 'beta',
-		'click #team-nav-img'	 			: 'beta',
-		'click #register-btn'  			: 'createOnClick',
-		'keypress .register-form' 	: 'createOnEnter',
-		'click .photo.smoothScroll'	: 'pan'
+		'mouseover .photo' 		 		: 'popup',
+		'click #team-beta-btn' 		: 'beta',
+		'click #team-nav-img'	 		: 'beta',
+		'click #register-btn'  		: 'createOnClick',
+		'keypress .register-form' : 'createOnEnter',
+		'click .smoothScroll'			: 'pan'
 	},
 	beta: function(e) {
 		e.preventDefault();

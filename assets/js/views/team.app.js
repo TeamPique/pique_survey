@@ -13,7 +13,8 @@ team.App = Backbone.View.extend({
 		'click #team-beta-btn' 		: 'beta',
 		'click #team-nav-img'	 		: 'beta',
 		'click #register-btn'  		: 'createOnClick',
-		'keypress .register-form' : 'createOnEnter'
+		'keypress .register-form' : 'createOnEnter',
+		'click #team-header-pic'	: 'pan'
 	},
 	beta: function(e) {
 		e.preventDefault();
@@ -28,6 +29,13 @@ team.App = Backbone.View.extend({
 		$('#team-register-form').html(this.registerTpl());
 		$('#team-footer').append('<p class="title footer">Proudly made in NYC</p>');
 		return this;
+	},
+	pan: function(e) {
+		e.preventDefault();
+		console.log('sup');
+  	$('html, body').animate({
+	    scrollTop: $('#team-about').offset().top
+	  }, 1000);
 	},
 	popup: function(e) {
 		e.preventDefault();

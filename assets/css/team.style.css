@@ -12,8 +12,7 @@ img#team-nav-img {
 }
 
 #team-header-col {
-	height: 600px;
-	margin-bottom: 50px;
+	padding-bottom: 15px;
 }
 
 #team-header-text {
@@ -28,24 +27,23 @@ img#team-nav-img {
 }
 
 #team-header-text h4 {
-	margin-top: 25%;
+	margin-top: 26%;
+	padding: 0px;
 	text-transform: uppercase;
 	color: #FCFCFC;
-	font-size: 20px;
+	color: #4C94C4;
+	font-size: 15px;
 }
 
 #team-header-text h1 {
 	color: #FCFCFC;
-	margin-top: 10%;
+	margin-top: 1%;
 	text-transform: uppercase;
-	font-size: 50px;
+	font-size: 30px;
+	color: #4C94C4;
 	font-family: 'Pontano Sans', sans-serif;
 	font-weight: 800;
 	display: block;
-}
-
-#team-about {
-	padding-top: 40px;
 }
 
 #team-about-col p strong {

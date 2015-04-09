@@ -15,7 +15,7 @@ beta.Router = Backbone.Router.extend({
 	},
 	team: function() {
 		$('#beta').hide();
-    $('body').css('background', 'url(assets/img/crossword.png)');
+    $('body').css('background', '#fff');
     $('#register-form').empty();
     new team.App({collection: collection});
     $('#team').show();

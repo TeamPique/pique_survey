@@ -2,12 +2,13 @@
 	height: 45px;
 	z-index: 1;
 	border-radius: 2px;
-	border-right: 2px solid #fff;
+	border-right: 2px solid #FCFCFC;
 	border-bottom: 1px solid #a3a3a3;
 }
 
 img#team-logo {
   width: 70px;
+  margin-top: 8px;
 }
 
 .white {

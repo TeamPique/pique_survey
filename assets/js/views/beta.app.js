@@ -17,10 +17,6 @@ beta.App = Backbone.View.extend({
     'keypress .register-form' : 'createOnEnter'
 	},
   team: function() {
-    $('#beta').hide();
-    $('body').css('background', 'url(assets/img/crossword.png)');
-    $('#register-form').empty();
-    $('#team').show();
     router.navigate('team', {trigger: true});
   },
 	form: function() {

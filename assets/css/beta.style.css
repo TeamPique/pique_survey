@@ -3,6 +3,10 @@ body {
   background: url(../img/bg2.jpg) no-repeat center center fixed;
 }
 
+ul#counter h2 {
+  font-family: 'Nunito', sans-serif;
+}
+
 #header {
   padding-top: 50px;
 }

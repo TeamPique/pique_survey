@@ -3,10 +3,9 @@ var beta = beta || {};
 
 team.App = Backbone.View.extend({
 	el: '#team',
-	modalElem: $('#team-thanks'),
+	modalElem: $('#modal-success'),
 	initialize: function() {
 		this.render();
-		$('#fullpage').fullpage();
 	},
 	events: {
 		'mouseover .photo' 		 		: 'popup',
@@ -21,6 +20,7 @@ team.App = Backbone.View.extend({
     this.$el.html(this.teamTpl());
     this.form();
     this.send();
+    $('#fullpage').fullpage();
   },
 	beta: function(e) {
 		router.navigate('', {trigger: true});

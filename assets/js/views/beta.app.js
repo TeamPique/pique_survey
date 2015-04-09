@@ -2,7 +2,7 @@ var beta = beta || {};
 
 beta.App = Backbone.View.extend({
 	el: '#beta',
-  modalElem: $('#beta-thanks'),
+  modalElem: $('#modal-success'),
 	initialize: function() {
     this.render();
 	},

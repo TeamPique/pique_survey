@@ -6,6 +6,10 @@
 	border-bottom: 1px solid #a3a3a3;
 }
 
+.header h2, .header h1 {
+	line-height: .6em;
+}
+
 .team-nav:hover {
 	cursor: pointer;
 }
@@ -26,7 +30,7 @@ img#team-logo {
 }
 
 .team-font {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 .stretch {

@@ -1,3 +1,8 @@
+.header {
+	background: #fff;
+
+}
+
 .team-font {
 	font-family: 'Nunito', sans-serif;
 }
@@ -111,9 +116,11 @@ h1#team-name.team-font {
 	}
 	h1#team-penpad.team-font {
 		margin-top: 8%;
+		font-size: 22px;
 	}
 	h3.team-font {
 		font-size: 14px;
+		margin-top: 1%;
 	}
 }
 

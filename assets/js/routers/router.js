@@ -15,7 +15,7 @@ beta.Router = Backbone.Router.extend({
 	},
 	team: function() {
 		$('#beta').hide();
-    $('body').css('background', '#fff');
+    $('body').css('background', '#70BDFC');
     $('#register-form').empty();
     new team.App({collection: collection});
     $('#team').show();

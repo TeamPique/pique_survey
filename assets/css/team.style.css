@@ -73,12 +73,47 @@ h1#team-name.team-font {
 	color: #fff;
 }
 
-@media (max-width: 886px) {
+@media (max-width: 885px) {
 	h1.team-font {
 		margin-top: 1%;
+		font-size: 20px;
+	}
+	h2.team-font {
+		font-size: 16px;
+		line-height: .5em;
+	}
+	h1#team-name.team-font {
+		margin-top: 25%;
+		font-size: 65px;
+	}
+	h1#team-penpad.team-font {
+		margin-top: 15%;
+		font-size: 30px;
+	}
+	h3.team-font {
+		font-size: 20px;
+	}
+}
+
+
+@media (max-width: 575px) {
+	h1.team-font {
+		margin-top: 1%;
+		font-size: 20px;
+	}
+	h2.team-font {
+		font-size: 16px;
+		line-height: .5em;
 	}
 	h1#team-name.team-font {
 		margin-top: 15%;
 		font-size: 55px;
 	}
+	h1#team-penpad.team-font {
+		margin-top: 8%;
+	}
+	h3.team-font {
+		font-size: 14px;
+	}
 }
+

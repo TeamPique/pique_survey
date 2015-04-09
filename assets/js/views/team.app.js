@@ -11,7 +11,7 @@ team.App = Backbone.View.extend({
 	events: {
 		'mouseover .photo' 		 		: 'popup',
 		'click #team-beta-btn' 		: 'beta',
-		'click #team-nav-img'	 		: 'beta',
+		'click .team-nav'	 				: 'beta',
 		'click #register-btn'  		: 'createOnClick',
 		'keypress .register-form' : 'createOnEnter',
 		'click #team-header-arrow': 'pan',

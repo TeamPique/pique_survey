@@ -4,15 +4,19 @@ beta.App = Backbone.View.extend({
 	el: '#beta',
   modalElem: $('#beta-thanks'),
 	initialize: function() {
-		this.countdown('04/24/2015 7:0 PM');
-    this.form();
-    this.send();
+    this.render();
 	},
 	events: {
 		'click #register-btn'     : 'createOnClick',
     'click #learn-btn'        : 'team',
     'keypress .register-form' : 'createOnEnter'
 	},
+  render: function() {
+    this.$el.html(this.betaTpl());
+    this.form();
+    this.send();
+    this.countdown('04/24/2015 7:0 PM');
+  },
   team: function() {
     router.navigate('team', {trigger: true});
   },

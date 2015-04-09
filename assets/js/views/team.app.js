@@ -5,8 +5,8 @@ team.App = Backbone.View.extend({
 	el: '#team',
 	modalElem: $('#team-thanks'),
 	initialize: function() {
-		this.form();
-		this.send();
+		this.render();
+		$('#fullpage').fullpage();
 	},
 	events: {
 		'mouseover .photo' 		 		: 'popup',
@@ -17,6 +17,11 @@ team.App = Backbone.View.extend({
 		'click #team-header-arrow': 'pan',
 		'click #team-about-arrow'	: 'panTeam'
 	},
+	render: function() {
+    this.$el.html(this.teamTpl());
+    this.form();
+    this.send();
+  },
 	beta: function(e) {
 		router.navigate('', {trigger: true});
 	},

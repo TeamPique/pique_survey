@@ -1,5 +1,6 @@
 _.extend(Backbone.View.prototype, {
   betaTpl : _.template($('#beta-parent-template').html()),
+  teamTpl : _.template($('#team-parent-template').html()),
   registerTpl : _.template($('#register-template').html()),
   modalTpl    : _.template($('#modal-template').html()),
   initialize: function() {

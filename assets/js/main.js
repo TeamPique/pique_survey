@@ -8,7 +8,7 @@ new WOW(
     { offset: 120 }
 ).init();
 
-$('#fullpage').fullpage();
+// $('#fullpage').fullpage();
 
 var collection = new beta.Users();
 var router = new beta.Router();

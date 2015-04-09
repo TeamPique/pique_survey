@@ -12,6 +12,7 @@ beta.Router = Backbone.Router.extend({
 		new beta.App({collection: collection});
 		$('body').css('background-size', 'cover');
 		$('#beta').show();
+		$('#beta').fullpage({fixedElements: '#beta'});
 	},
 	team: function() {
 		$('#beta').hide();
@@ -19,6 +20,6 @@ beta.Router = Backbone.Router.extend({
     $('#register-form').empty();
     new team.App({collection: collection});
     $('#team').show();
-    $('#fullpage').fullpage({fixedElements: '#beta'});
+    $('#fullpage').fullpage({fitToSection: false});
 	},
 });

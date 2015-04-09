@@ -9,7 +9,7 @@ new WOW(
 ).init();
 
 
-$('#fullpage').fullpage();
+$('#fullpage').fullpage({responsive: 885});
 
 
 var collection = new beta.Users();

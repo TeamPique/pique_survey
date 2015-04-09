@@ -3,10 +3,6 @@ _.extend(Backbone.View.prototype, {
   teamTpl : _.template($('#team-parent-template').html()),
   registerTpl : _.template($('#register-template').html()),
   modalTpl    : _.template($('#modal-template').html()),
-  initialize: function() {
-    this.send();
-    this.form();
-  },
   modal: function() {
     this.modalElem.html(this.modalTpl());
     return this;

@@ -19,8 +19,7 @@ team.App = Backbone.View.extend({
 	render: function() {
     this.$el.html(this.teamTpl());
     this.form();
-    this.send();
-    $('#fullpage').fullpage();
+    return this;
   },
 	beta: function(e) {
 		router.navigate('', {trigger: true});

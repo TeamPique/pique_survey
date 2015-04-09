@@ -19,5 +19,6 @@ beta.Router = Backbone.Router.extend({
     $('#register-form').empty();
     new team.App({collection: collection});
     $('#team').show();
+    $('#fullpage').fullpage({fixedElements: '#beta'});
 	},
 });

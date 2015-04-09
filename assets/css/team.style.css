@@ -10,10 +10,6 @@
 
 }
 
-/*.team-overlay {
-	
-}*/
-
 .team-text-overlay {
 	position: absolute;
 	z-index: 2;
@@ -31,8 +27,14 @@
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
 
-h1.team-font {
+h1#team-penpad.team-font {
 	margin-top: 15%;
+}
+
+h1#team-name.team-font {
+	color: #60ADFB;
+	font-size: 75px;
+	margin-top: 25%;
 }
 
 #team-register {
@@ -71,6 +73,12 @@ h1.team-font {
 	color: #fff;
 }
 
-@media (min-width: 886px) {
-
+@media (max-width: 886px) {
+	h1.team-font {
+		margin-top: 1%;
+	}
+	h1#team-name.team-font {
+		margin-top: 15%;
+		font-size: 55px;
+	}
 }

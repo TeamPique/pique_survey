@@ -2,6 +2,11 @@
 	font-family: 'Nunito', sans-serif;
 }
 
+.stretch {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
 #team-register {
 	margin-top: 60px;
 	margin-bottom: 60px;
@@ -36,4 +41,8 @@
 .blue {
 	background: #70BDFC;
 	color: #fff;
+}
+
+@media (min-width: 886px) {
+
 }

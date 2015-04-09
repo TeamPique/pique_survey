@@ -5,6 +5,28 @@
 .stretch {
 	padding-right: 0px;
 	padding-left: 0px;
+	margin-top: 0px;
+	position: relative;
+}
+
+.team-overlay {
+	z-index: 1;
+	background-color: #000;
+	opacity: .1;
+	padding-right: 0px;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+.team-text-overlay {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  margin-top: 15%;
 }
 
 #team-register {

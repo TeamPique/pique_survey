@@ -17,12 +17,12 @@ img#team-logo {
 
 .white {
 	background: #fff;
+	padding-top: 40px;
 }
 
 .gray {
 	background: #808080;
 	height: 40px;
-	z-index: 3;
 }
 
 .team-font {

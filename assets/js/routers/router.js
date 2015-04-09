@@ -8,6 +8,7 @@ beta.Router = Backbone.Router.extend({
 	},
 	index: function() {
 		$('#team').hide();
+		$('#register-form').empty();
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
 		new beta.App({collection: collection});
 		$('body').css('background-size', 'cover');

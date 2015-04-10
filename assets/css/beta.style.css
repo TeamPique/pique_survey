@@ -149,7 +149,6 @@ button#register-btn:active, button#learn-btn:active {
   padding: 8px 13px 6px;
 }
 
-
 input#name, input#email {
   height: 30px;
   width: 60%;
@@ -215,11 +214,11 @@ h3.modal-message {
 
 #beta-footer {
   margin-bottom: 10px;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 
 #beta-footer a {
-  bottom: 0;
+  bottom: 2px;
   background: transparent;
   margin-left: 6px;
   margin-right: 6px;

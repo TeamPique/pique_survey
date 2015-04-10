@@ -6,7 +6,6 @@ team.App = Backbone.View.extend({
 	modalElem: $('#modal-success'),
 	initialize: function() {
 		this.render();
-		$('#fullpage').fullpage({autoScrolling: true});
 	},
 	events: {
 		'mouseover .photo' 		 		: 'popup',

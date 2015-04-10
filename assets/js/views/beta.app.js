@@ -6,13 +6,12 @@ beta.App = Backbone.View.extend({
 	initialize: function() {
     this.render();
     this.countdown('04/24/2015 7:0 PM');
-    $('#fullpage').fullpage({autoScrolling: false});
-	},
-	events: {
-		'click #register-btn'     : 'createOnClick',
+  },
+  events: {
+    'click #register-btn'     : 'createOnClick',
     'click #learn-btn'        : 'team',
     'keypress .register-form' : 'createOnEnter'
-	},
+  },
   render: function() {
     this.$el.html(this.betaTpl());
     this.form();

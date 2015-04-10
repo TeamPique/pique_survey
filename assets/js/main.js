@@ -8,6 +8,8 @@ new WOW(
     { offset: 120 }
 ).init();
 
+
 var collection = new beta.Users();
 var router = new beta.Router();
 Backbone.history.start();
+

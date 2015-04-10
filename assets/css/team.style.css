@@ -7,7 +7,12 @@
 }
 
 .header h2, .header h1 {
+	line-height: 1em;
+}
+
+h2#team-collab {
 	line-height: .6em;
+	padding-bottom: 28px;
 }
 
 .team-nav:hover {

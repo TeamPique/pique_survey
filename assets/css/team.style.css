@@ -65,7 +65,7 @@ h1#team-penpad.team-font {
 h1#team-name.team-font {
 	color: #60ADFB;
 	font-size: 75px;
-	margin-top: 25%;
+	margin-top: 15%;
 }
 
 #team-register {
@@ -114,7 +114,7 @@ h1#team-name.team-font {
 		line-height: .5em;
 	}
 	h1#team-name.team-font {
-		margin-top: 25%;
+		margin-top: 20%;
 		font-size: 65px;
 	}
 	h1#team-penpad.team-font {

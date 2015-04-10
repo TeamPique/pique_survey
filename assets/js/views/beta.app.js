@@ -5,6 +5,7 @@ beta.App = Backbone.View.extend({
   modalElem: $('#modal-success'),
 	initialize: function() {
     this.render();
+    this.form();
     this.countdown('04/24/2015 7:0 PM');
   },
   events: {

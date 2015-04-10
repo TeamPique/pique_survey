@@ -28,8 +28,7 @@ _.extend(Backbone.View.prototype, {
 
     if (!this.validate(email)) {
 
-      $('#email-error').text('Please enter a valid email address');
-      $('#email-error').css({color: 'red'});
+
       $('#email').focus();
       
       return false;
@@ -42,6 +41,7 @@ _.extend(Backbone.View.prototype, {
         });
 
       this.modal()
+      $('#email-error').val('');
     }
 
     $('#name').val('');

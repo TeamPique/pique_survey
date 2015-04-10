@@ -7,15 +7,15 @@ beta.Router = Backbone.Router.extend({
 		'team' : 'team'
 	},
 	index: function() {
-		$('#team').hide();
-		$('#register-form').empty();
+		$('#team').empty();
+		$('#team-register-form').empty();
 		$('body').css('background', 'url(assets/img/bg2.jpg)');
 		new beta.App({collection: collection});
 		$('body').css('background-size', 'cover');
 		$('#beta').show();
 	},
 	team: function() {
-		$('#beta').hide();
+		$('#beta').empty();
     $('body').css('background', '#70BDFC');
     $('#register-form').empty();
     new team.App({collection: collection});

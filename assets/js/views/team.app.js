@@ -6,6 +6,7 @@ team.App = Backbone.View.extend({
 	modalElem: $('#modal-success'),
 	initialize: function() {
 		this.render();
+		this.form();
 	},
 	events: {
 		'mouseover .photo' 		 		: 'popup',

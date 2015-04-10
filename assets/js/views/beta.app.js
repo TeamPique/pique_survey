@@ -53,7 +53,5 @@ beta.App = Backbone.View.extend({
 
     timer = setInterval(count, 1000);
   },
+
 });
-
-
-

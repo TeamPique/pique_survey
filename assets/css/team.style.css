@@ -7,15 +7,19 @@
 	     url('WebFont.svg#webfont') format('svg');
 }
 
-.header {
-	margin-top: 40px;
+.blue {
+	background: #70BDFC;
+	color: #fff;
 }
 
 h1.team-font {
 	line-height: 1.3em;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin-top: -10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+#team-pic-col img.img-responsive.team-full-img {
+	bottom: 0;
 }
 
 #team-arrow {
@@ -26,12 +30,29 @@ h1.team-font {
   top: 0;
   left: 0;
   color: #fff;
-  padding-top: 350px;
+  margin-top: 450px;
 }
 
 #team-arrow a {
 	background: transparent;
 	cursor: pointer;
+}
+
+#team-header-text h2 {
+	margin-top: -.5%;
+	line-height: 1.3em;
+	color: #000;
+}
+
+#team-header-text h1 {
+	color: #000;
+	font-size: 34px;
+}
+
+#team-header-text {
+	z-index: 5;
+	position: absolute;
+	margin-top: -20px;
 }
 
 #team-arrow img {
@@ -42,16 +63,20 @@ h1.team-font {
 	position: relative;
 }
 
+#team-list h2.team-font {
+	line-height: .9em;
+}
+
+#team-list {
+	padding: 25px;
+}
+
 .team-nav {
 	height: 45px;
 	z-index: 3;
 	border-radius: 2px;
 	border-right: 2px solid #FCFCFC;
 	border-bottom: 1px solid #a3a3a3;
-}
-
-.header h2 {
-	line-height: 2em;
 }
 
 h2#team-collab {
@@ -146,11 +171,6 @@ h1#team-name.team-font {
 
 #team-footer p.title.footer {
 	margin-left: -15px;
-}
-
-.blue {
-	background: #70BDFC;
-	color: #fff;
 }
 
 @media (max-width: 885px) {

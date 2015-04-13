@@ -11,7 +11,8 @@ team.App = Backbone.View.extend({
 	events: {
 		'click .team-nav'	 				: 'beta',
 		'click #register-btn'  		: 'createOnClick',
-		'keypress .register-form' : 'createOnEnter'
+		'keypress .register-form' : 'createOnEnter',
+		'click .fa-angle-down'		: 'scroll'
 	},
 	render: function() {
     this.$el.html(this.teamTpl());
@@ -25,5 +26,8 @@ team.App = Backbone.View.extend({
 		$('#team-register-form').html(this.registerTpl());
 		$('#team-footer').append('<p class="title footer">Proudly made in NYC</p>');
 		return this;
+	},
+	scroll: function() {
+		$.fn.fullpage.moveSectionDown()
 	},
 });

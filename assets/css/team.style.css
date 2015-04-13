@@ -27,6 +27,10 @@
   padding-top: 400px;
 }
 
+#team-arrow i {
+	cursor: pointer;
+}
+
 #team-arrow a {
 	background: transparent;
 }

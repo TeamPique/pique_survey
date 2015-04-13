@@ -13,10 +13,12 @@
 
 .header h2 {
 	padding-top: 10px;
+	font-size: 27px;
 }
 
 .team-font.lower {
 	line-height: .3em;
+	font-size: 33px;
 }
 
 #team-arrow {
@@ -45,6 +47,14 @@ img.img-responsive.team-full-img {
 
 #team-pic-col {
 	position: relative;
+}
+
+#team-list h2.team-font {
+	line-height: .9em;
+}
+
+#team-list {
+	padding: 25px;
 }
 
 .team-nav {

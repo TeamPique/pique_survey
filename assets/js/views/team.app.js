@@ -12,7 +12,7 @@ team.App = Backbone.View.extend({
 		'click .team-nav'	 				: 'beta',
 		'click #register-btn'  		: 'createOnClick',
 		'keypress .register-form' : 'createOnEnter',
-		'click .fa-angle-down'		: 'scroll'
+		'click .team-arrow-anchor': 'scroll'
 	},
 	render: function() {
     this.$el.html(this.teamTpl());

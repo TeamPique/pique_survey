@@ -11,11 +11,6 @@
 	margin-top: 40px;
 }
 
-.fa-angle-down {
-	font-size: 14em;
-	color: #60ADFB;
-}
-
 #team-arrow {
 	position: absolute;
 	z-index: 2;
@@ -27,12 +22,9 @@
   padding-top: 400px;
 }
 
-#team-arrow i {
-	cursor: pointer;
-}
-
 #team-arrow a {
 	background: transparent;
+	cursor: pointer;
 }
 
 #team-pic-col {

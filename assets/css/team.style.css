@@ -11,6 +11,30 @@
 	margin-top: 40px;
 }
 
+.fa-angle-down {
+	font-size: 14em;
+	color: #60ADFB;
+}
+
+#team-arrow {
+	position: absolute;
+	z-index: 2;
+	height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  padding-top: 400px;
+}
+
+#team-arrow a {
+	background: transparent;
+}
+
+#team-pic-col {
+	position: relative;
+}
+
 .team-nav {
 	height: 45px;
 	z-index: 3;

@@ -11,6 +11,13 @@
 	margin-top: 40px;
 }
 
+h1.team-font {
+	line-height: 1.3em;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: -10px;
+}
+
 #team-arrow {
 	position: absolute;
 	z-index: 2;
@@ -19,7 +26,7 @@
   top: 0;
   left: 0;
   color: #fff;
-  padding-top: 500px;
+  padding-top: 350px;
 }
 
 #team-arrow a {
@@ -43,8 +50,8 @@
 	border-bottom: 1px solid #a3a3a3;
 }
 
-.header h2, .header h1 {
-	line-height: 1em;
+.header h2 {
+	line-height: 2em;
 }
 
 h2#team-collab {

@@ -7,6 +7,10 @@
 	     url('WebFont.svg#webfont') format('svg');
 }
 
+.header {
+	margin-top: 40px;
+}
+
 .team-nav {
 	height: 45px;
 	z-index: 3;

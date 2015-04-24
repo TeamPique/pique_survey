@@ -6,7 +6,7 @@ beta.App = Backbone.View.extend({
 	initialize: function() {
     this.render();
     this.form();
-    this.countdown('04/24/2015 7:0 PM');
+    this.countdown('04/25/2015 12:0 AM');
   },
   events: {
     'click #register-btn'     : 'createOnClick',
